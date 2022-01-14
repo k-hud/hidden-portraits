@@ -27,7 +27,7 @@
         "escape-string-regexp": "^1.0.5",
         "expose-loader": "^0.7.3",
         "fs-extra": "^4.0.2",
-        "gulp": "^4.0.0",
+        "gulp": "^4.0.2",
         "gulp-dart-sass": "^1.0.2",
         "gulp-html": "^3.4.2",
         "gulp-if": "^2.0.2",
