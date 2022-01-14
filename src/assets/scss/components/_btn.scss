@@ -1,0 +1,117 @@
+/* ------------------------------------------------------------ *\
+	Button
+\* ------------------------------------------------------------ */
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	appearance: none;
+}
+
+/*  Btn block  */
+
+.btn--block {
+	display: block;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Btn default */
+
+.btn-default {
+	padding: 1.8rem 2.9rem 1.7rem;
+	font-family: $ff-clash-display;
+	font-size: 1.6rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: background .3s, color .3s;
+	letter-spacing: 0.08rem;
+
+	@include breakpoint-down(tablet) {
+		font-size: 1.2rem;
+		padding: 1.6rem 2.9rem 1.5rem;
+		letter-spacing: 0.07rem;
+	}
+
+	&:hover {
+		background: $c-black;
+		color: #ffffff;
+	}
+}
+
+/* Btn outline solid */
+.btn-outline--solid {
+	border: .1rem solid $c-black;
+}
+
+/* Btn light */
+.btn-light {
+	background: $c-white;
+	color: $c-black;
+}
+
+/* Btn close */
+.btn-close {
+	position: relative;
+	display: inline-block;
+	width: 5rem;
+	height: 5rem;
+	border: .2rem solid $c-white;
+	border-radius: 50%;
+	transition: border .3s;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 2.5rem;
+		height: .2rem;
+		position: absolute;
+		top: 2.2rem;
+		left: 1.1rem;
+		transform: rotate(-45deg);
+		background: $c-white;
+		transition: background .3s;
+	}
+
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 2.5rem;
+		height: .2rem;
+		position: absolute;
+		top: 2.2rem;
+		left: 1.1rem;
+		transform: rotate(45deg);
+		background: $c-white;
+		transition: background .3s;
+	}
+
+	&:hover {
+		border: .2rem solid #a1a0a0;
+	}
+	&:hover:before,
+	&:hover:after {
+		background: #a1a0a0;
+	}
+}
+
+/* Btn alt */
+.btn-alt {
+	padding: 1.6rem 2.8rem;
+	font-size: 1.4rem;
+
+	@include breakpoint-down(tablet) {
+		font-size: 1.2rem;
+		padding: 1.6rem 2.9rem 1.5rem;
+		letter-spacing: 0.07rem;
+	}
+
+	@include breakpoint-down(mobile) {
+		font-size: 1.6rem;
+		padding: 1.7rem 2.9rem;
+		letter-spacing: 0.07rem;
+	}
+}

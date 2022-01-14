@@ -1,0 +1,21 @@
+/* ------------------------------------------------------------ *\
+	Main
+\* ------------------------------------------------------------ */
+
+.main {
+	padding-top: 12.4rem;
+
+	@include breakpoint-down(tablet) {
+		padding-top: 8.2rem;
+	}
+}
+
+/* Main alt */
+
+.main--alt {
+	padding: 0;
+
+	@include breakpoint-down(tablet) {
+		padding-top: 8.2rem;
+	}
+}

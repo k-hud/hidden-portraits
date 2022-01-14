@@ -1,0 +1,36 @@
+/* ------------------------------------------------------------ *\
+	Boxes
+\* ------------------------------------------------------------ */
+
+.boxes {
+	.boxes__cols {
+		margin-bottom: -6.1rem;
+		justify-content: flex-start;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: -1.9rem;
+		}
+	}
+
+	.box {
+		margin-bottom: 6.1rem;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 1.9rem;
+		}
+	}
+}
+
+.boxes--main {
+	.boxes__cols {
+		@include breakpoint-down(tablet) {
+			margin-bottom: -4.1rem;
+		}
+	}
+
+	.box {
+		@include breakpoint-down(tablet) {
+			margin-bottom: 4.1rem;
+		}
+	}
+}

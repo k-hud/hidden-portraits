@@ -1,0 +1,74 @@
+/* ------------------------------------------------------------ *\
+	Col
+\* ------------------------------------------------------------ */
+
+.col--1-of-2 {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.col--size-1 {
+	flex: 0 0 43.2%;
+
+	@include breakpoint-down(tablet) {
+		flex: 0 0 43.6%;
+	}
+}
+
+.col--size-2 {
+	flex: 0 0 56.8%;
+
+	@include breakpoint-down(tablet) {
+		flex: 0 0 56.4%;
+	}
+}
+
+.col--size-3 {
+	flex: 0 0 55.2%;
+
+	@include breakpoint-down(mobile-medium) {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.col--size-4 {
+	flex: 0 0 44.8%;
+
+	@include breakpoint-down(mobile-medium) {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.col--1of-5 {
+	flex: 0 0 20%;
+	max-width: 20%;
+
+	@include breakpoint-down(mobile) {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+.col--1of-3 {
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+
+	@include breakpoint-down(tablet) {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	@include breakpoint-down(mobile) {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.col--mobile-full {
+	@include breakpoint-down(mobile) {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}

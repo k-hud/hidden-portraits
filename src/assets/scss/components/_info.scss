@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------ *\
+	Info
+\* ------------------------------------------------------------ */
+
+.info {
+	padding: 2.7rem 3.4rem 2.3rem;
+	border: .1rem solid $c-black;
+
+	@include breakpoint-down(mobile) {
+		padding: 2.2rem 2.4rem 2.7rem;
+	}
+
+	h3 {
+		margin-bottom: 0rem;
+		letter-spacing: 0.1rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: -.3rem;
+			letter-spacing: 0.07rem;
+		}
+	}
+
+	.info__title {
+		min-height: 5.3rem;
+		margin-bottom: 1rem;
+
+		@include breakpoint-down(mobile) {
+			min-height: auto;
+			margin-bottom: 1.8rem;
+		}
+	}
+
+	.info__title p {
+		@include breakpoint-down(mobile) {
+			margin-bottom: 0;
+			font-family: $ff-clash-display;
+			font-size: 1rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.05rem;
+		}
+	}
+
+	.info__title--alt {
+		@include breakpoint-down(mobile) {
+			margin-bottom: 2.3rem;
+		}
+	}
+
+	.info__col + .info__col {
+		@include breakpoint-down(mobile-medium) {
+			margin-top: 3.2rem;
+		}
+	}
+}

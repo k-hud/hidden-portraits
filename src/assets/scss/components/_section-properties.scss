@@ -1,0 +1,39 @@
+/* ------------------------------------------------------------ *\
+	Section properties
+\* ------------------------------------------------------------ */
+
+.section-properties {
+	h2 {
+		margin-bottom: 3.6rem;
+		letter-spacing: 0.2rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 3.8rem;
+			letter-spacing: 0.1rem;
+		}
+	}
+
+	.section__body {
+		padding: 7.5rem 0 8rem;
+
+		@include breakpoint-down(mobile) {
+			padding: 3.4rem 1.1rem 8rem;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			padding: 3.4rem 0 8rem;
+		}
+	}
+
+	.section__boxes {
+		margin-bottom: 7.8rem;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 3.8rem;
+		}
+	}
+
+	.section__boxes:last-child {
+		margin-bottom: 0;
+	}
+}

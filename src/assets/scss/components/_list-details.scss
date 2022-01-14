@@ -1,0 +1,71 @@
+/* ------------------------------------------------------------ *\
+	List details
+\* ------------------------------------------------------------ */
+
+.list-details {
+	list-style-type: none;
+
+	li {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+
+	li + li {
+		margin-top: .4rem;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 0.2rem;
+		}
+	}
+
+	h6 {
+		margin-bottom: .3rem;
+		flex: 0 0 6.5rem;
+		font-weight: 500;
+
+		@include breakpoint-down(mobile) {
+			flex: 0 0 5rem;
+		}
+	}
+
+	.list-details-dots {
+		display: block;
+		margin: 0 1.8rem .8rem;
+		flex: 1;
+		border-bottom: .1rem dashed $c-black;
+
+		@include breakpoint-down(mobile) {
+			margin: 0 1.2rem .8rem;
+		}
+	}
+
+	p {
+		margin-bottom: 0;
+		flex: 0 0 4.4rem;
+
+		@include breakpoint-down(mobile) {
+			flex: 0 0 3.4rem;
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	List details alt
+\* ------------------------------------------------------------ */
+
+.list-details--alt {
+	list-style-type: none;
+
+	h6 {
+		font-weight: 500;
+	}
+
+	h6 span {
+		font-weight: normal;
+	}
+
+	li + li {
+		margin-top: 1.3rem;
+	}
+}

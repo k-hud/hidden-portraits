@@ -1,0 +1,69 @@
+/* ------------------------------------------------------------ *\
+	Icons
+\* ------------------------------------------------------------ */
+
+[class*='ico-'] {
+	display: inline-block;
+}
+
+[class*='ico-'] svg {
+	width: 100%;
+	height: 100%;
+}
+
+.ico-twitter {
+	width: 1.8rem;
+	height: 1.5rem;
+
+	svg {
+		fill: $c-black;
+	}
+
+	@include breakpoint-down(mobile) {
+		width: 1.5rem;
+		height: 1.2rem;
+	}
+}
+
+.ico-instagram {
+	width: 1.5rem;
+	height: 1.5rem;
+
+	svg {
+		fill: $c-black;
+	}
+
+	@include breakpoint-down(mobile) {
+		width: 1.2rem;
+		height: 1.2rem;
+	}
+}
+
+.ico-discord {
+	width: 2rem;
+	height: 1.5rem;
+
+	svg {
+		fill: $c-black;
+	}
+
+	@include breakpoint-down(mobile) {
+		width: 1.6rem;
+		height: 1.2rem;
+	}
+}
+
+.ico-email {
+	width: 2.4rem;
+	height: 1.5rem;
+
+	@include breakpoint-down(mobile) {
+		width: 1.9rem;
+		height: 1.2rem;
+	}
+}
+
+.ico-close {
+	width: 5rem;
+	height: 5rem;
+}

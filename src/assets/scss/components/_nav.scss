@@ -1,0 +1,47 @@
+/* ------------------------------------------------------------ *\
+	Nav
+\* ------------------------------------------------------------ */
+
+.nav {
+	ul {
+		display: flex;
+		align-items: center;
+		list-style-type: none;
+
+		@include breakpoint-down(tablet) {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	li + li {
+		margin-left: 4rem;
+
+		@include breakpoint-down(tablet) {
+			margin-left: 0;
+			margin-top: 5.6rem;
+		}
+
+		@media only screen and (max-height: 435px) and (orientation: landscape) {
+			margin-top: 2.5rem;
+		}
+	}
+
+	a {
+		display: block;
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		font-family: $ff-clash-display;
+		font-weight: 600;
+		letter-spacing: 0.06rem;
+
+		&:hover {
+			opacity: .6;
+		}
+
+		@include breakpoint-down(tablet) {
+			font-size: 2.2rem;
+			color: #B2B2B2;
+		}
+	}
+}

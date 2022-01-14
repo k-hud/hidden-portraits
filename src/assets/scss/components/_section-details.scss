@@ -1,0 +1,56 @@
+/* ------------------------------------------------------------ *\
+	Section details
+\* ------------------------------------------------------------ */
+
+.section-details {
+	@include breakpoint-down(tablet) {
+		padding: 1.9rem 0;
+	}
+
+	.section__head-inner {
+		@include breakpoint-down(mobile) {
+			padding: 0 1.2rem;
+		}
+	}
+
+	.section__head .section__details {
+		margin-bottom: 0;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	.section__body {
+		padding: 10rem 0 10.2rem;
+
+		@include breakpoint-down(tablet) {
+			padding: 6.1rem 0;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 6.1rem 0 4.2rem;
+		}
+	}
+
+	.section__body-inner {
+		max-width: 120rem;
+		margin: 0 auto;
+
+		@include breakpoint-down(mobile) {
+			padding: 0 1.2rem;
+		}
+	}
+
+	.section__details {
+		margin-bottom: 7.4rem;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 5rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 2rem;
+		}
+	}
+}
