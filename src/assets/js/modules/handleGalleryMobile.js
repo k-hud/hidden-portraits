@@ -1,11 +1,23 @@
-import { $window } from '../utils/globals';
+import { $window, $document } from '../utils/globals';
 
 function handleGalleryMobile() {
-	$('.js-gallery-item').one('click', function(event) {
-		$(this).attr('disabled', true);
-		$(this).addClass('is--active');
+	$('.js-gallery-item').one('click touchstart', function(event) {
+		var $this = $(this);
+
+		$this.attr('disabled', true);
+		$this.closest('.gallery')
+			.find('.gallery-item').removeClass('is--active');
+		$this.addClass('is--active');
 
 	  	event.preventDefault();
+	});
+
+	$document.on('click touchstart', function(event) {
+		var $target = $(event.target);
+
+		if (!$target.closest('.gallery-item').length) {
+	   		$('.gallery-item').removeClass('is--active');
+		}
 	});
 }
 
