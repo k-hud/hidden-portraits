@@ -27,10 +27,6 @@
 
 	.roadmap-group:last-child .feature:last-child:after {
 		display: none;
-
-		@include breakpoint-down(mobile) {
-			display: inline-block;
-		}
 	}
 
 	.roadmap-group__aside {
