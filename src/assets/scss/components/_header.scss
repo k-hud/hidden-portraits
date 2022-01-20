@@ -3,151 +3,157 @@
 \* ------------------------------------------------------------ */
 
 .header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: $c-white;
-	z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $c-white;
+  z-index: 10;
 
-	.header__inner {
-		padding: 4rem 0 1.7rem;
+  .header__inner {
+    padding: 4rem 0 1.7rem;
 
-		@include breakpoint-down(tablet) {
-			padding: 0;
-		}
-	}
+    @include breakpoint-down(tablet) {
+      padding: 0;
+    }
+  }
 
-	.header__bar {
-		margin-bottom: .5rem;
-		text-align: center;
-		position: relative;
-		z-index: 20;
-		transition: background .3s;
+  .header__bar {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+    transition: background 0.3s;
 
-		@include breakpoint-down(tablet) {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			padding: 2.8rem 1.7rem 2.4rem;
-			margin: 0 -1.7rem;
-		}
-	}
+    @include breakpoint-down(tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2.8rem 1.7rem 2.4rem;
+      margin: 0 -1.7rem;
+    }
+  }
 
-	.header__content {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-		@include breakpoint-down(tablet) {
-			position: fixed;
-			top: 0;
-			left: 0;
-			height: 100vh;
-			overflow-y: auto;
-			background: $c-black;
-			color: $c-white;
-			width: 100%;
-			z-index: 10;
-			padding: 11.8rem 3rem 3rem;
-			text-align: center;
-			display: block;
-			transform: translateY(-100%);
-			opacity: 0;
-			visibility: hidden;
-			transition: transform .3s, opacity .3s, visibility .3s;
-		}
+    @include breakpoint-down(tablet) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      overflow-y: auto;
+      background: $c-black;
+      color: $c-white;
+      width: 100%;
+      z-index: 10;
+      padding: 11.8rem 3rem 3rem;
+      text-align: center;
+      display: block;
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+    }
 
-		@media only screen and (max-height: 435px) and (orientation: landscape) {
-			padding: 8rem 3rem 3rem;
-		}
-	}
+    @media only screen and (max-height: 435px) and (orientation: landscape) {
+      padding: 8rem 3rem 3rem;
+    }
+  }
 
-	.header__socials {
-		@include breakpoint-down(tablet) {
-			justify-content: center;
-		}
-	}
+  .header__socials {
+    @include breakpoint-down(tablet) {
+      justify-content: center;
+    }
+  }
 
-	.header__socials [class*='ico-'] svg {
-		@include breakpoint-down(tablet) {
-			fill: #B2B2B2;
-		}
-	}
+  .header__socials [class*="ico-"] svg {
+    @include breakpoint-down(tablet) {
+      fill: #b2b2b2;
+    }
+  }
 
-	.header__socials li + li {
-		@include breakpoint-down(tablet) {
-			margin-left: 3rem;
-		}
-	}
+  .header__socials li + li {
+    @include breakpoint-down(tablet) {
+      margin-left: 3rem;
+    }
+  }
 
-	.header__socials .ico-twitter {
-		@include breakpoint-down(tablet) {
-			width: 2.2rem;
-			height: 2rem;
-		}
-	}
+  .header__socials .ico-twitter {
+    @include breakpoint-down(tablet) {
+      width: 2.2rem;
+      height: 2rem;
+    }
+  }
 
-	.header__socials .ico-instagram {
-		@include breakpoint-down(tablet) {
-			width: 2rem;
-			height: 2rem;
-		}
-	}
+  .header__socials .ico-instagram {
+    @include breakpoint-down(tablet) {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
 
-	.header__socials .ico-discord {
-		@include breakpoint-down(tablet) {
-			width: 2.7rem;
-			height: 2rem;
-		}
-	}
+  .header__socials .ico-discord {
+    @include breakpoint-down(tablet) {
+      width: 2.7rem;
+      height: 2rem;
+    }
+  }
 
-	.header__logo {
-		@include breakpoint-down(tablet) {
-			width: 16.5rem;
-			height: 2.5rem;
-		}
-	}
+  .header__socials .ico-medium {
+    @include breakpoint-down(tablet) {
+      height: 25px;
+    }
+  }
 
-	.header__nav {
-		@include breakpoint-down(tablet) {
-			margin-bottom: 5.8rem;
-		}
+  .header__logo {
+    @include breakpoint-down(tablet) {
+      width: 16.5rem;
+      height: 2.5rem;
+    }
+  }
 
-		@media only screen and (max-height: 435px) and (orientation: landscape) {
-			margin-bottom: 4rem;
-		}
-	}
+  .header__nav {
+    @include breakpoint-down(tablet) {
+      margin-bottom: 5.8rem;
+    }
 
-	.header__nav-trigger {
-		margin-top: -.2rem;
-	}
+    @media only screen and (max-height: 435px) and (orientation: landscape) {
+      margin-bottom: 4rem;
+    }
+  }
 
-	.header__btn {
-		@include breakpoint-down(tablet) {
-			margin-bottom: 6.2rem;
-			font-size: 1rem;
-			letter-spacing: 0.05rem;
-		}
+  .header__nav-trigger {
+    margin-top: -0.2rem;
+  }
 
-		@media only screen and (max-height: 435px) and (orientation: landscape) {
-			margin-bottom: 5rem;
-		}
-	}
+  .header__btn {
+    @include breakpoint-down(tablet) {
+      margin-bottom: 6.2rem;
+      font-size: 1rem;
+      letter-spacing: 0.05rem;
+    }
+
+    @media only screen and (max-height: 435px) and (orientation: landscape) {
+      margin-bottom: 5rem;
+    }
+  }
 }
 
 .header.is--active {
-	.header__bar {
-		background: $c-black;
-	}
+  .header__bar {
+    background: $c-black;
+  }
 
-	.header__content {
-		transform: translateY(0);
-		opacity: 1;
-		visibility: visible;
-	}
+  .header__content {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
 
-	.header__logo svg {
-		fill: $c-white;
-	}
+  .header__logo svg {
+    fill: $c-white;
+  }
 }
