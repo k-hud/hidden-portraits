@@ -1,0 +1,15 @@
+/* ------------------------------------------------------------ *\
+	Section roadmap
+\* ------------------------------------------------------------ */
+
+.section-roadmap {
+	.section__body {
+		padding: 16.7rem 0 9rem;
+		max-width: 101rem;
+		margin: 0 auto;
+
+		@include breakpoint-down(mobile) {
+			padding: 3.6rem 1rem 7rem;
+		}
+	}
+}

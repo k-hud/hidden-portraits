@@ -1,0 +1,13 @@
+/* ------------------------------------------------------------ *\
+	Features
+\* ------------------------------------------------------------ */
+
+.features {
+	.features__feature {
+		min-height: 19rem;
+
+		@include breakpoint-down(mobile) {
+			min-height: 28.4rem;
+		}
+	}
+}

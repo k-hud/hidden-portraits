@@ -1,0 +1,73 @@
+/* ------------------------------------------------------------ *\
+	Feature
+\* ------------------------------------------------------------ */
+
+.feature {
+	position: relative;
+	padding-left: 11.5rem;
+	padding-bottom: 3.7rem;
+
+	@include breakpoint-down(tablet) {
+		padding-left: 3.5rem;
+	}
+
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 2.1rem;
+		height: 2.1rem;
+		background: $c-black;
+		border-radius: 50%;
+		position: absolute;
+		top: .2rem;
+		left: 0;
+
+		@include breakpoint-down(tablet) {
+			width: 1.5rem;
+			height: 1.5rem;
+			top: .1rem;
+		}
+	}
+
+	&:after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 3.2rem;
+		left: 1rem;
+		bottom: .7rem;
+		width: .1rem;
+		background: $c-black;
+
+		@include breakpoint-down(tablet) {
+			top: 2.6rem;
+			left: .7rem;
+		}
+	}
+
+	h3 {
+		margin-bottom: .9rem;
+		letter-spacing: 0.1rem;
+
+		@include breakpoint-down(tablet) {
+			letter-spacing: 0.07rem;
+		}
+	}
+
+	p {
+		margin-bottom: 1.5rem;
+	}
+
+	a {
+		text-transform: uppercase;
+		text-decoration: underline;
+		font-family: $ff-clash-display;
+		font-weight: 600;
+		font-size: 1.2rem;
+		letter-spacing: 0.06rem;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
