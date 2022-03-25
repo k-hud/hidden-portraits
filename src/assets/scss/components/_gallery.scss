@@ -3,35 +3,35 @@
 \* ------------------------------------------------------------ */
 
 .gallery {
-	.gallery-item + .gallery-item {
-		margin-top: 3rem;
+  .gallery-item + .gallery-item {
+    margin-top: 3rem;
 
-		@include breakpoint-down(tablet) {
-			margin-top: 3rem;
-		}
+    @include breakpoint-down(tablet) {
+      margin-top: 3rem;
+    }
 
-		@include breakpoint-down(mobile-small) {
-			margin-top: 1rem;
-		}
-	}
+    @include breakpoint-down(mobile-small) {
+      margin-top: 1rem;
+    }
+  }
 
-	.gallery__group + .gallery__group {
-		margin-top: 3rem;
+  .gallery__group + .gallery__group {
+    margin-top: 3rem;
 
-		@include breakpoint-down(tablet) {
-			margin-top: 3rem;
-		}
+    @include breakpoint-down(tablet) {
+      margin-top: 3rem;
+    }
 
-		@include breakpoint-down(mobile-small) {
-			margin-top: 1rem;
-		}
-	}
+    @include breakpoint-down(mobile-small) {
+      margin-top: 1rem;
+    }
+  }
 
-	.gallery-bottom {
-		margin-top: 86%;
+  .gallery-bottom {
+    margin-top: 66%;
 
-		@include breakpoint-down(tablet) {
-			margin-top: 92%;
-		}
-	}
+    @include breakpoint-down(tablet) {
+      margin-top: 72%;
+    }
+  }
 }
