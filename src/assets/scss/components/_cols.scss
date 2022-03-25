@@ -3,30 +3,30 @@
 \* ------------------------------------------------------------ */
 
 .cols {
-	display: flex;
-	justify-content: space-between;
-	flex-flow: row wrap;
-	margin: 0 -1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin: 0 -1rem;
 
-	@include breakpoint-down(tablet) {
-		margin: 0 -.9rem;
-	}
+  @include breakpoint-down(tablet) {
+    margin: 0 -0.9rem;
+  }
 
-	@include breakpoint-down(mobile-small) {
-		margin: 0 -.5rem;
-	}
+  @include breakpoint-down(mobile-small) {
+    margin: 0 -0.5rem;
+  }
 
-	.cols__col {
-		padding: 0 1.5rem;
+  .cols__col {
+    padding: 0 1rem;
 
-		@include breakpoint-down(tablet) {
-			padding: 0 .9rem;
-		}
+    @include breakpoint-down(tablet) {
+      padding: 0 0.9rem;
+    }
 
-		@include breakpoint-down(mobile-small) {
-			padding: 0 .5rem;
-		}
-	}
+    @include breakpoint-down(mobile-small) {
+      padding: 0 0.5rem;
+    }
+  }
 }
 
 /* ------------------------------------------------------------ *\
@@ -34,25 +34,25 @@
 \* ------------------------------------------------------------ */
 
 .cols--alt {
-	margin: 0 -3rem;
+  margin: 0 -3rem;
 
-	@include breakpoint-down(small-desktop) {
-		margin: 0 -1.5rem;
-	}
+  @include breakpoint-down(small-desktop) {
+    margin: 0 -1.5rem;
+  }
 
-	@include breakpoint-down(tablet) {
-		margin: 0 -1rem;
-	}
+  @include breakpoint-down(tablet) {
+    margin: 0 -1rem;
+  }
 
-	.cols__col {
-		padding: 0 3rem;
+  .cols__col {
+    padding: 0 2rem;
 
-		@include breakpoint-down(small-desktop) {
-			padding: 0 1.5rem;
-		}
+    @include breakpoint-down(small-desktop) {
+      padding: 0 1.5rem;
+    }
 
-		@include breakpoint-down(tablet) {
-			padding: 0 1rem;
-		}
-	}
+    @include breakpoint-down(tablet) {
+      padding: 0 1rem;
+    }
+  }
 }

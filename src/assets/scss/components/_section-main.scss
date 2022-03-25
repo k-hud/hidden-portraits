@@ -3,116 +3,117 @@
 \* ------------------------------------------------------------ */
 
 .section-main {
-	.section__head {
-		padding: 3.5rem 0 4rem;
-		text-align: center;
-		border-top: .1rem solid $c-black;
-		border-bottom: .1rem solid $c-black;
+  .section__head {
+    padding: 3.5rem 0 4rem;
+    text-align: center;
+    border-top: 0.1rem solid $c-black;
+    border-bottom: 0.1rem solid $c-black;
 
-		@include breakpoint-down(tablet) {
-			padding: 4rem 0;
-		}
-	}
+    @include breakpoint-down(tablet) {
+      padding: 4rem 0;
+    }
+  }
 
-	.section__head h1 {
-		margin-bottom: .4rem;
-		letter-spacing: 0.24rem;
+  .section__head h1 {
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.24rem;
 
-		@include breakpoint-down(tablet) {
-			letter-spacing: 0.12rem;
-			margin: 0 1rem .7rem;
-		}
-	}
+    @include breakpoint-down(tablet) {
+      letter-spacing: 0.12rem;
+      margin: 0 1rem 0.7rem;
+    }
+  }
 
-	.section__head h3 {
-		letter-spacing: 0.1rem;
-		line-height: 1;
+  .section__head h3 {
+    letter-spacing: 0.1rem;
+    line-height: 1;
 
-		@include breakpoint-down(tablet) {
-			letter-spacing: 0.07rem;
-		}
-	}
+    @include breakpoint-down(tablet) {
+      letter-spacing: 0.07rem;
+    }
+  }
 
-	.section__head-inner {
-		max-width: 48rem;
-		margin: 0 auto;
-	}
+  .section__head-inner {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
 
-	.section__body {
-		padding: 12.1rem 0 8rem;
+  .section__body {
+    padding: 12.1rem 0 8rem;
 
-		@include breakpoint-down(small-desktop) {
-			padding: 9.1rem 0 8rem;
-		}
+    @include breakpoint-down(small-desktop) {
+      padding: 9.1rem 0 8rem;
+    }
 
-		@include breakpoint-down(tablet) {
-			padding: 3.8rem 0 7.9rem;
-		}
-	}
+    @include breakpoint-down(tablet) {
+      padding: 3.8rem 0 7.9rem;
+    }
+  }
 
-	.section__body-inner {
-		display: flex;
-		justify-content: space-between;
+  .section__body-inner {
+    display: flex;
+    justify-content: space-between;
 
-		@include breakpoint-down(tablet) {
-			display: block;
-		}
-	}
+    @include breakpoint-down(tablet) {
+      display: block;
+    }
+  }
 
-	.section__aside {
-		margin-top: 26.4%;
-		padding-right: 3rem;
-		flex: 0 0 25.6%;
-		max-width: 25.6%;
+  .section__aside {
+    margin-top: 26.4%;
+    padding-right: 2rem;
+    margin-left: 20px;
+    flex: 0 0 25%;
+    max-width: 20%;
 
-		@include breakpoint-down(small-desktop) {
-			flex: 0 0 28.6%;
-			max-width: 28.6%;
-		}
+    @include breakpoint-down(small-desktop) {
+      flex: 0 0 28.6%;
+      max-width: 28.6%;
+    }
 
-		@include breakpoint-down(tablet) {
-			margin-top: 0;
-			width: 100%;
-			max-width: 100%;
-			margin-bottom: 3.9rem;
-		}
-	}
+    @include breakpoint-down(tablet) {
+      margin-top: 0;
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 3.9rem;
+    }
+  }
 
-	.section__aside h2 {
-		margin-bottom: -.1rem;
-		letter-spacing: 0.2rem;
+  .section__aside h2 {
+    margin-bottom: -0.1rem;
+    letter-spacing: 0.2rem;
 
-		@include breakpoint-down(tablet) {
-			letter-spacing: 0.1rem;
-		}
-	}
+    @include breakpoint-down(tablet) {
+      letter-spacing: 0.1rem;
+    }
+  }
 
-	.section__aside h4 {
-		margin-bottom: 0rem;
-		letter-spacing: 0.07rem;
-	}
+  .section__aside h4 {
+    margin-bottom: 0rem;
+    letter-spacing: 0.07rem;
+  }
 
-	.section__aside h5 {
-		margin-bottom: .6rem;
-		font-family: $ff-clash-display;
+  .section__aside h5 {
+    margin-bottom: 0.6rem;
+    font-family: $ff-clash-display;
 
-		@include breakpoint-down(mobile) {
-			margin-bottom: .8rem;
-		}
-	}
+    @include breakpoint-down(mobile) {
+      margin-bottom: 0.8rem;
+    }
+  }
 
-	.section__content {
-		flex: 0 0 74.4%;
-		max-width: 74.4%;
+  .section__content {
+    flex: 0 0 74.4%;
+    max-width: 74.4%;
 
-		@include breakpoint-down(small-desktop) {
-			flex: 0 0 71.4%;
-			max-width: 71.4%;
-		}
+    @include breakpoint-down(small-desktop) {
+      flex: 0 0 71.4%;
+      max-width: 71.4%;
+    }
 
-		@include breakpoint-down(tablet) {
-			width: 100%;
-			max-width: 100%;
-		}
-	}
+    @include breakpoint-down(tablet) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
 }
