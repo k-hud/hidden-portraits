@@ -9,11 +9,17 @@
   margin: 0 -1rem;
 
   @include breakpoint-down(tablet) {
-    margin: 0 -0.9rem;
+    margin: 0 -1rem;
   }
 
+  @include breakpoint-down(mobile) {
+    margin: 0 -0.5rem;
+    left: -5rem;
+    margin: 0 -4rem 0 1rem;
+  }
   @include breakpoint-down(mobile-small) {
     margin: 0 -0.5rem;
+    margin: 0 -6rem;
   }
 
   .cols__col {

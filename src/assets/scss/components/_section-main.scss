@@ -55,6 +55,9 @@
     justify-content: space-between;
 
     @include breakpoint-down(tablet) {
+      display: flex;
+    }
+    @include breakpoint-down(mobile) {
       display: block;
     }
   }
@@ -74,9 +77,12 @@
 
     @include breakpoint-down(tablet) {
       margin-top: 0;
-      width: 100%;
-      max-width: 100%;
+      width: 80%;
+      max-width: 80%;
       margin-bottom: 3.9rem;
+    }
+    @include breakpoint-down(mobile) {
+      display: none;
     }
   }
 
@@ -113,6 +119,11 @@
     }
 
     @include breakpoint-down(tablet) {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @include breakpoint-down(mobile) {
       width: 100%;
       max-width: 100%;
     }
