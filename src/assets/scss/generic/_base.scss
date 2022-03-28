@@ -152,6 +152,10 @@ blockquote:last-child {
 .hero-logo {
   min-width: 400px;
   margin-bottom: 20px;
+
+  @include breakpoint-down(tablet) {
+    min-width: 350px;
+  }
 }
 
 .section-logo {
