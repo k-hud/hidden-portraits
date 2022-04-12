@@ -116,3 +116,15 @@
     letter-spacing: 0.07rem;
   }
 }
+
+/*  btn secondary  */
+
+.btn-secondary {
+  font-family: $ff-clash-display;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  padding: 1.7rem 2.9rem;
+  text-transform: uppercase;
+}

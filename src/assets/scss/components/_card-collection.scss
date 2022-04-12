@@ -1,0 +1,66 @@
+/* ------------------------------------------------------------ *\
+	Card collection
+\* ------------------------------------------------------------ */
+
+.card-collection {
+	max-width: 100%;
+	margin-bottom: 8rem;
+
+	.card__image {
+		width: 100%;
+		height: 46.4rem;
+	}
+
+	.card__image img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+
+	.card__content {
+		position: relative;
+		background-color: $c-white;
+		width: 60.6rem;
+		margin: -10rem 0rem 0rem 5rem;
+		padding: 6rem 10.1rem;
+		border-left: .2rem solid #000000;
+	}
+
+	h3 {
+		font-weight: 600;
+		line-height: 1;
+		letter-spacing: 0.05em;
+		position: relative;
+		padding-bottom: 1rem;
+		margin: 0rem 0rem 2rem 0;
+	}
+
+	h3:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: .2rem;
+		width: 10rem;
+		background-color: #000;
+	}
+
+	h2 {
+		font-weight: 600;
+		line-height: 1;
+		letter-spacing: 0.07em;
+		margin: 0rem 0rem 2rem 0;
+	}
+
+	p:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+}
+
+/*  card collection alt  */
+
+.card-collection--alt {
+	.card__content {
+		padding: 5rem 10.1rem;
+	}
+}

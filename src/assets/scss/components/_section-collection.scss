@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------ *\
+	Section collection
+\* ------------------------------------------------------------ */
+
+.section-collection {
+	position: relative;
+	padding: 4rem 0 0;
+
+	.section__inner {
+		border-top: 4px solid #000000;
+		padding: 8rem 0rem 0rem 0rem;
+		display: flex
+	}
+
+	.section__cotnent {
+		flex: 1 auto;
+	}
+
+	.section__content-inner {
+		width: 100%;
+		max-width: 90rem;
+	}
+	.section__aside {
+		flex: 0 0 30rem;
+		max-width: 30rem;
+	}
+}
