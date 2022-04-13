@@ -108,9 +108,4 @@
 .ico-email-secondary {
 	width: 2.4rem;
 	height: 1.5rem;
-
-	@include breakpoint-down(mobile) {
-		width: 1.9rem;
-		height: 1.2rem;
-	}
 }
