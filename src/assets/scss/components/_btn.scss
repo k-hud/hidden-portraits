@@ -131,6 +131,11 @@
   color: #000;
   transition: color .3s, background .3s;
 
+  @include breakpoint-down(mobile) {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
   &:hover {
     background-color: #000;
     color: $c-white;

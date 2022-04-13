@@ -1,0 +1,30 @@
+/* ------------------------------------------------------------ *\
+	Section -artners
+\* ------------------------------------------------------------ */
+
+.section-partners {
+	padding: 8rem 0;
+	text-align: center;
+	background-color: #F9F9F9;
+
+	@include breakpoint-down(mobile) {
+		padding: 4rem 0;
+	}
+
+	h3 {
+		color: #777777;
+		font-weight: 600;
+		line-height: 1;
+		letter-spacing: 0.05em;
+		margin-bottom: 3rem;
+
+		@include breakpoint-down(mobile) {
+			font-size: 2rem;
+		}
+	}
+
+	.section__inner {
+		max-width: 114rem;
+		margin: 0 auto;
+	}
+}

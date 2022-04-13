@@ -4,17 +4,39 @@
 
 .section-collection {
 	position: relative;
-	padding: 4rem 0 0;
+	padding: 4rem 0 6rem;
+
+	@include breakpoint-down(mobile) {
+		padding: .3rem 0rem 5.1rem;
+	}
 
 	.section__inner {
 		border-top: 4px solid #000000;
 		padding: 8rem 0rem 0rem 0rem;
-		display: flex
+		display: flex;
+		flex-flow: row wrap;
+
+		@include breakpoint-down(mobile) {
+			border: none;
+			padding: 0rem;
+		}
 	}
 
 	.section__content {
-		flex: 1 auto;
+		flex: 0 0 calc(100% - 30rem);
+		max-width: calc(100% - 30rem);
 		padding-right: 3rem;
+
+		@include breakpoint-down(tablet) {
+			flex: 0 0 calc(100% - 28rem);
+			max-width: calc(100% - 28rem);
+		}
+
+		@include breakpoint-down(mobile) {
+			flex: 0 0 100%;
+			max-width: 100%;
+			padding-right: 0;
+		}
 	}
 
 	.section__content-inner {
@@ -26,5 +48,16 @@
 		flex: 0 0 30rem;
 		max-width: 30rem;
 		margin-top: -.2rem;
+
+		@include breakpoint-down(tablet) {
+			flex: 0 0 28rem;
+			max-width: 30rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			flex: 0 0 100%;
+			max-width: 100%;
+			margin-top: 0;
+		}
 	}
 }

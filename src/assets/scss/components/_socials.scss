@@ -102,6 +102,11 @@
 		line-height: 1.167;
 		font-weight: 600;
 		margin-bottom: 1rem;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.4rem;
+			line-height: 1;
+		}
 	}
 
 	ul {

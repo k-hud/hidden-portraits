@@ -15,6 +15,12 @@
 	}
 }
 
+/*  shell alt  */
+
+.shell--alt {
+	max-width: calc( 114rem + #{$shell-gutter} * 2 );
+}
+
 /* Shell Fluid */
 
 .shell--fluid {

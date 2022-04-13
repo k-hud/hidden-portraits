@@ -86,3 +86,31 @@
 		height: 1.2rem;
 	}
 }
+
+.ico-twitter-secondary {
+	width: 1.8rem;
+	height: 1.5rem;
+
+	svg {
+		fill: $c-black;
+	}
+}
+
+.ico-instagram-secondary {
+	width: 1.5rem;
+	height: 1.5rem;
+
+	svg {
+		fill: $c-black;
+	}
+}
+
+.ico-email-secondary {
+	width: 2.4rem;
+	height: 1.5rem;
+
+	@include breakpoint-down(mobile) {
+		width: 1.9rem;
+		height: 1.2rem;
+	}
+}

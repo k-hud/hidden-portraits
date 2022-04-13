@@ -21,4 +21,15 @@
 
 .link--more {
 	margin-top: 1.5rem;
+
+	@include breakpoint-down(mobile) {
+		margin-top: .6rem;
+	}
+}
+
+/*  link alt  */
+
+.link--alt {
+	font-size: 1.6rem;
+	line-height: 1.23;
 }

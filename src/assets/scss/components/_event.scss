@@ -21,6 +21,10 @@
 		margin: 0rem 0rem 1.8rem 0;
 	}
 
+	.event__image img {
+		width: 100%;
+	}
+
 	.event__head {
 		display: flex;
 		align-items: center;
@@ -40,6 +44,10 @@
 
 	p:not(:last-child) {
 		margin-bottom: .4rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: .2rem;
+		}
 	}
 
 	h4 {
@@ -47,6 +55,17 @@
 		line-height: 1.167;
 		letter-spacing: 0.05em;
 		margin: 0rem 0rem 0.4rem 0;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.4rem;
+			line-height: 1;
+		}
+	}
+
+	.event__actions {
+		@include breakpoint-down(mobile) {
+			text-align: right;
+		}
 	}
 }
 
@@ -55,4 +74,31 @@
 .event--alt {
 	border: none;
 	padding-bottom: 0;
+}
+
+/*  event secondary  */
+
+.event--secondary {
+	@include breakpoint-down(mobile) {
+		font-size: 1.4rem;
+		line-height: 1.57;
+		padding-bottom: 1.5rem;
+	}
+
+	p {
+		@include breakpoint-down(mobile) {
+			line-height: 1.57;
+		}
+	}
+
+	p:not(:last-child) {
+		@include breakpoint-down(mobile) {
+			margin-bottom: .4rem;
+		}
+	}
+
+	.event__head {
+		text-align: right;
+		justify-content: flex-end;
+	}
 }

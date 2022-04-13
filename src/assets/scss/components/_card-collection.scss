@@ -6,9 +6,23 @@
 	max-width: 100%;
 	margin-bottom: 8rem;
 
+	@include breakpoint-down(mobile) {
+		margin: 0rem 0 4rem;
+	}
+
 	.card__image {
 		width: 100%;
 		height: 46.4rem;
+
+		@include breakpoint-down(tablet) {
+			height: 40rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			height: 37.5rem;
+			width: calc(100% + 3.4rem);
+			margin-left: -1.7rem;
+		}
 	}
 
 	.card__image img {
@@ -20,10 +34,22 @@
 	.card__content {
 		position: relative;
 		background-color: $c-white;
-		width: 60.6rem;
-		margin: -10rem 0rem 0rem 5rem;
+		width: 67.333%;
+		max-width: calc(100% - 10rem);
+		margin: -10rem 5rem 0rem;
 		padding: 6rem 10.1rem;
 		border-left: .2rem solid #000000;
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+			padding: 6rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin: -4rem 0rem 0rem;
+			max-width: 100%;
+			padding: 4.8rem 2rem 4.8rem 1.9rem;
+		}
 	}
 
 	h3 {
@@ -43,6 +69,10 @@
 		height: .2rem;
 		width: 10rem;
 		background-color: #000;
+
+		@include breakpoint-down(mobile) {
+			width: 5rem;
+		}
 	}
 
 	h2 {
@@ -62,5 +92,13 @@
 .card-collection--alt {
 	.card__content {
 		padding: 5rem 10.1rem;
+
+		@include breakpoint-down(tablet) {
+			padding: 6rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 4.8rem 2rem 4.8rem 1.9rem;
+		}
 	}
 }

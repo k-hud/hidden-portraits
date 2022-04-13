@@ -4,9 +4,17 @@
 
 .widget {
 	position: relative;
-	padding: 4rem 0rem 8rem 0rem;
 	border-top: 2px solid #000000;
 	display: flex;
+	padding: 4rem 0rem 0rem 0rem;
+
+	&:not(:last-child) {
+		padding: 4rem 0rem 8rem 0rem;
+
+		@include breakpoint-down(mobile) {
+			padding: 4rem 0rem 4rem 0rem;
+		}
+	}
 
 	.widget__title {
 		display: inline-block;
@@ -17,6 +25,11 @@
 		letter-spacing: 0.07em;
 		font-size: 3rem;
 		font-weight: 600;
+
+		@include breakpoint-down(mobile) {
+			font-size: 2rem;
+			line-height: 1;
+		}
 	}
 
 	.widget__title span {
@@ -27,6 +40,12 @@
 		flex:  0 0 5.2rem;
 		max-width: 5.2rem;
 		margin-left: -.2rem;
+
+		@include breakpoint-down(mobile) {
+			margin-left: 0;
+			flex:  0 0 4.1rem;
+			max-width: 4.1rem;
+		}
 	}
 
 	.widget__content {
