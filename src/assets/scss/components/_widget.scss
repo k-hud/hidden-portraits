@@ -1,0 +1,36 @@
+/* ------------------------------------------------------------ *\
+	Widget
+\* ------------------------------------------------------------ */
+
+.widget {
+	position: relative;
+	padding: 4rem 0rem 8rem 0rem;
+	border-top: 2px solid #000000;
+	display: flex;
+
+	.widget__title {
+		display: inline-block;
+		width: auto;
+		white-space: nowrap;
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+		letter-spacing: 0.07em;
+		font-size: 3rem;
+		font-weight: 600;
+	}
+
+	.widget__title span {
+		margin-right: 1rem;
+	}
+
+	.widget__aside {
+		flex:  0 0 5.2rem;
+		max-width: 5.2rem;
+		margin-left: -.2rem;
+	}
+
+	.widget__content {
+		width: 100%;
+		flex: 1 auto;
+	}
+}

@@ -1,0 +1,37 @@
+/* ------------------------------------------------------------ *\
+	Subscribe
+\* ------------------------------------------------------------ */
+
+.subscribe {
+	.subscribe__field {
+		width: 100%;
+		height: 3rem;
+		background: #F9F9F9;
+		color: #000;
+		font-size: 1rem;
+		line-height: 1;
+		padding: 1rem;
+		border: 0;
+		border-radius: 0;
+		outline: 0;
+		text-transform: uppercase;
+	}
+
+	.subscribe__row + .subscribe__row {
+		margin-top: .4rem;
+	}
+
+	.subscribe__field::placeholder {
+		color: #777777;
+	}
+
+	.subscribe__btn {
+		padding: .9rem;
+		text-align: center;
+		width: 100%;
+		font-size: 1rem;
+		letter-spacing: 0.05em;
+		font-weight: 600;
+		line-height: 1.4;
+	}
+}

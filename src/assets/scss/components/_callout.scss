@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------ *\
+	Callout-small
+\* ------------------------------------------------------------ */
+
+.callout-small {
+	padding: 2rem 0;
+
+	.callout__head {
+		margin-bottom: 2rem;
+	}
+
+	h4 {
+		font-weight: 600;
+		font-size: 1.2rem;
+		line-height: 1.167;
+		letter-spacing: 0.05em;
+		margin-bottom: .4rem;
+	}
+
+	.callout__entry {
+		font-size: 1.2rem;
+		line-height: 1.167;
+	}
+
+	p {
+		line-height: 1.167;
+	}
+}

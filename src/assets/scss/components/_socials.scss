@@ -86,3 +86,32 @@
 		}
 	}
 }
+
+/*  socials secondary  */
+
+.socials--secondary {
+	width: 100%;
+	max-width: 20rem;
+	display: block;
+	padding-bottom: 1.4rem;
+	border-bottom: 1px solid #DADADA;
+
+	h4 {
+		font-size: 1.2rem;
+		letter-spacing: 0.05em;
+		line-height: 1.167;
+		font-weight: 600;
+		margin-bottom: 1rem;
+	}
+
+	ul {
+		display: inline-flex;
+	}
+
+	ul a,
+	ul li  {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

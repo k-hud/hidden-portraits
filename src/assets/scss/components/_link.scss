@@ -1,0 +1,24 @@
+/* ------------------------------------------------------------ *\
+	Link
+\* ------------------------------------------------------------ */
+
+.link {
+	display: inline-block;
+	font-family: $ff-clash-display;
+	font-weight: 600;
+	font-size: 1.2rem;
+	line-height: 1.167;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+/*  link more  */
+
+.link--more {
+	margin-top: 1.5rem;
+}

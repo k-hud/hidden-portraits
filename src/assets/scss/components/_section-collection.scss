@@ -12,16 +12,19 @@
 		display: flex
 	}
 
-	.section__cotnent {
+	.section__content {
 		flex: 1 auto;
+		padding-right: 3rem;
 	}
 
 	.section__content-inner {
 		width: 100%;
 		max-width: 90rem;
 	}
+
 	.section__aside {
 		flex: 0 0 30rem;
 		max-width: 30rem;
+		margin-top: -.2rem;
 	}
 }
