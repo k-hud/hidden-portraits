@@ -97,6 +97,7 @@
 	}
 }
 
+/*  gallery-main--alt  */
 .gallery-main--alt {
 	margin: 0 -2.3rem -4rem;
 
@@ -125,7 +126,7 @@
 
 		@include breakpoint-down(tablet) {
 			padding: 0 1.5rem;
-			margin-bottom: 4rem;
+			margin-bottom: 4.2rem;
 		}
 
 		@include breakpoint-down(mobile) {
@@ -136,6 +137,84 @@
 		@include breakpoint-down(mobile-medium) {
 			max-width: 100%;
 			padding: 0;
+		}
+	}
+}
+
+/*  gallery-main--secondary  */
+
+.gallery-main--secondary:last-child {
+	margin: 0 -3rem -3.8rem;
+
+	@include breakpoint-down(large-desktop) {
+		margin: 0 -1.5rem -3.8rem;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		display: block;
+		margin: 0;
+	}
+}
+
+.gallery-main--secondary {
+	margin: 0 -3rem -3.8rem;
+
+	@include breakpoint-down(large-desktop) {
+		margin: 0 -1.5rem -3.8rem;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		display: block;
+		margin: 0;
+	}
+
+	li {
+		flex: 0 0 33.33%;
+		max-width: 33.33%;
+		padding: 0 3rem;
+		margin-bottom: 3.8rem;
+
+		@include breakpoint-down(large-desktop) {
+			padding: 0 1.5rem;
+			margin-bottom: 3.8rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 100%;
+			padding: 0;
+		}
+	}
+
+	li > h4 {
+		font-size: 1.2rem;
+		letter-spacing: 0.05em;
+		line-height: 1.167;
+		font-weight: 600;
+		margin: 2rem 0rem .4rem;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.4rem;
+			line-height: 1;
+			margin:.8rem 0 .4rem;
+		}
+	}
+
+	li > span {
+		font-size: 1.2rem;
+		letter-spacing: 0.05em;
+		line-height: 1.167;
+		font-weight: 600;
+		color: #777777;
+		font-family: $ff-clash-display;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.4rem;
+			line-height: 1;
 		}
 	}
 }

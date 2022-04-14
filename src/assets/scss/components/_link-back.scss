@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	Link back
+\* ------------------------------------------------------------ */
+
+.link-back {
+	display: flex;
+	align-items: center;
+	color: $c-black;
+	font-family: $ff-clash-display;
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 1.167;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	transition: opacity .3s;
+
+	@include breakpoint-down(mobile) {
+		font-size: 1rem;
+		line-height: 1;
+	}
+
+	&:hover {
+		opacity: .6;
+	}
+
+	i {
+		margin-right: 2rem;
+
+		@include breakpoint-down(mobile) {
+			margin-right: 1rem;
+		}
+	}
+}

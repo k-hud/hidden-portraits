@@ -155,6 +155,7 @@
 
 		@include breakpoint-down(mobile) {
 			width: 23.2em;
+			max-width: 100%;
 			height: 2rem;
 		}
 	}

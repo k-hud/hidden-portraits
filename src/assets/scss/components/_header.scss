@@ -165,6 +165,19 @@
   margin-top: 20px;
 }
 
+.video-embed.no-margin {
+  margin-top: 0;
+}
+
+.video-embed--alt {
+  width: 100%;
+
+  @include breakpoint-down(mobile-medium) {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* ------------------------------------------------------------ *\
   header alt
 \* ------------------------------------------------------------ */

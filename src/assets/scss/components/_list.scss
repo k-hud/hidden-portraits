@@ -1,0 +1,67 @@
+/* ------------------------------------------------------------ *\
+	List
+\* ------------------------------------------------------------ */
+
+.list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style-type: none;
+	padding: 3rem 0;
+
+	@include breakpoint-down(mobile) {
+		padding: 1.9rem 0;
+	}
+
+	li + li {
+		margin-left: 2rem;
+		padding-left: 2rem;
+	}
+
+	li + li:after {
+		content: '';
+		height: 3rem;
+		width: .1rem;
+		background-color: $c-black;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+
+		@include breakpoint-down(mobile) {
+			height: 2rem;
+		}
+	}
+
+	li {
+		position: relative;
+		color: $c-black;
+		font-family: $ff-clash-display;
+		font-size: 1.2rem;
+		font-weight: 600;
+		line-height: 1.167;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		transition: opacity .3s;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1rem;
+			line-height: 1;
+		}
+	}
+
+	li:hover {
+		opacity: .6;
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	a i,
+	a img {
+		margin-right: 1rem;
+	}
+}
