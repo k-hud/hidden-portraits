@@ -11,6 +11,12 @@
 		padding: .3rem 0rem 0rem;
 	}
 
+	h1 {
+		font-weight: 600;
+		line-height: 1;
+		letter-spacing: 0.05em;
+	}
+
 	.section__image {
 		position: relative;
 		min-height: 60rem;
@@ -135,5 +141,30 @@
 
 	p a:hover  {
 		text-decoration: none;
+	}
+
+	.section__content + .section__content {
+		margin-top: 8rem;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 8.9rem;
+		}
+	}
+}
+
+/*  section category alt  */
+
+.section-category--alt {
+	padding-bottom: 6rem;
+
+	@include breakpoint-down(mobile) {
+		padding: .3rem 0rem 2rem;
+	}
+
+	h2 {
+		@include breakpoint-down(mobile) {
+			text-align: center;
+			margin-bottom: 4rem;
+		}
 	}
 }

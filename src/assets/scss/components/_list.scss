@@ -43,10 +43,14 @@
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 		transition: opacity .3s;
+		min-height: 2.8rem;
+		display: flex;
+		align-items: center;
 
 		@include breakpoint-down(mobile) {
 			font-size: 1rem;
 			line-height: 1;
+			min-height: 2rem;
 		}
 	}
 
