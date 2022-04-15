@@ -112,3 +112,19 @@
     }
   }
 }
+
+/*  cols info  */
+
+.cols--info {
+  @include breakpoint-down(mobile) {
+    left: 0;
+    margin: 0;
+
+    .cols__col {
+      @include breakpoint-down(mobile) {
+        padding: 0;
+      }
+
+    }
+  }
+}

@@ -41,6 +41,24 @@
   }
 }
 
+.col--size-5 {
+  flex: 0 0 53.6%;
+
+  @include breakpoint-down(mobile-medium) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.col--size-6 {
+  flex: 0 0 43%;
+
+  @include breakpoint-down(mobile-medium) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 .col--1of2 {
   flex: 0 0 50%;
   max-width: 50%;

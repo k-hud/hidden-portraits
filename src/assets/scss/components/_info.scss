@@ -53,3 +53,34 @@
 		}
 	}
 }
+
+/* ------------------------------------------------------------ *\
+	info alt
+\* ------------------------------------------------------------ */
+
+.info--alt {
+	padding: 2.9rem;
+
+	@include breakpoint-down(mobile) {
+		padding: 2.5rem;
+	}
+
+	h3 {
+		line-height: 1;
+		letter-spacing: 0.05em;
+	}
+
+	.info__title {
+		margin-bottom: .8rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 2.2rem;
+		}
+	}
+
+	.info__col + .info__col {
+		@include breakpoint-down(mobile-medium) {
+			margin-top: 4rem;
+		}
+	}
+}

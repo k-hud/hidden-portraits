@@ -69,3 +69,60 @@
 		margin-top: 1.3rem;
 	}
 }
+
+/* ------------------------------------------------------------ *\
+	List details file
+\* ------------------------------------------------------------ */
+
+.list-details--file {
+	list-style-type: none;
+
+	h6 {
+		font-size: 1.2rem;
+		font-weight: 400;
+		line-height: 1.167;
+	}
+
+	h6 span {
+		font-size: 1.4rem;
+		line-height: 1;
+		margin-left: .2rem;
+	}
+
+	li + li {
+		margin-top: 1.45rem;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 1.6rem;
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	list details secondary
+\* ------------------------------------------------------------ */
+
+.list-details--secondary {
+	h6 {
+		font-size: 1.2rem;
+		line-height: 1.167;
+		margin-bottom: 0;
+	}
+
+	p {
+		font-size: 1.4rem;
+		line-height: 1rem;
+	}
+
+	li + li {
+		margin-top: 1rem;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 1rem;
+		}
+	}
+
+	.list-details-dots {
+		margin: 0 1.8rem;
+	}
+}

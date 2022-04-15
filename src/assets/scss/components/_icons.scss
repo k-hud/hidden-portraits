@@ -138,6 +138,20 @@
 	}
 }
 
+.ico-open-sea2 {
+	width: 2rem;
+	height: 2rem;
+
+	@include breakpoint-down(mobile) {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	svg {
+		fill: $c-black;
+	}
+}
+
 .ico-medium2 {
 	@include breakpoint-down(mobile-medium) {
 		width: 6.1rem;

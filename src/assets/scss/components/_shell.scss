@@ -21,6 +21,12 @@
 	max-width: calc( 114rem + #{$shell-gutter} * 2 );
 }
 
+/*  shell size1  */
+
+.shell--size1 {
+	max-width: calc( 120rem + #{$shell-gutter} * 2 );
+}
+
 /* Shell Fluid */
 
 .shell--fluid {
