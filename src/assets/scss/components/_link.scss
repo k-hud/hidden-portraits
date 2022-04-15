@@ -11,8 +11,11 @@
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	text-decoration: underline;
+	color: $c-black;
+	transition: opacity .3s;
 
 	&:hover {
+		opacity: .6;
 		text-decoration: none;
 	}
 }
