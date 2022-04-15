@@ -132,6 +132,24 @@
   padding-top: 136%;
 }
 
+/* Gallery item size 5 */
+
+.gallery-item--size-5 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 69%;
+}
+
+/* Gallery item size 7 */
+
+.gallery-item--size-7 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 136.5%;
+}
+
 /* ------------------------------------------------------------ *\
 	Gallery item alt
 \* ------------------------------------------------------------ */
@@ -224,5 +242,21 @@
 
   .gallery-item__inner {
     padding: 0;
+  }
+}
+
+/* ------------------------------------------------------------ *\
+  gallery item basic
+\* ------------------------------------------------------------ */
+
+.gallery-item--basic {
+  transition: opacity .3s;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  & > img {
+    position: relative;
   }
 }

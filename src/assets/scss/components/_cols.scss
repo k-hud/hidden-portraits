@@ -113,7 +113,9 @@
   }
 }
 
-/*  cols info  */
+/* ------------------------------------------------------------ *\
+  cols info
+\* ------------------------------------------------------------ */
 
 .cols--info {
   @include breakpoint-down(mobile) {
@@ -125,6 +127,35 @@
         padding: 0;
       }
 
+    }
+  }
+}
+
+/* ------------------------------------------------------------ *\
+  cols basic
+\* ------------------------------------------------------------ */
+
+.cols--basic {
+  margin: -2rem -3rem;
+
+  @include breakpoint-down(small-desktop) {
+    margin: -2rem -1.5rem;
+  }
+
+  @include breakpoint-down(tablet) {
+    margin: -2rem -1rem;
+  }
+
+
+  .cols__col {
+    padding: 2rem 3rem;
+
+    @include breakpoint-down(small-desktop) {
+      padding: 2rem 1.5rem;
+    }
+
+    @include breakpoint-down(tablet) {
+      padding: 2rem 1rem;
     }
   }
 }

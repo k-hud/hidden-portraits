@@ -94,6 +94,21 @@
   }
 }
 
+.col--1of3 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+
+  @include breakpoint-down(tablet) {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+
+  @include breakpoint-down(mobile) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 .col--mobile-full {
   @include breakpoint-down(mobile) {
     flex: 0 0 100%;

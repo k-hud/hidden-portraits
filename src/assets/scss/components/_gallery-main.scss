@@ -189,32 +189,4 @@
 			padding: 0;
 		}
 	}
-
-	li > h4 {
-		font-size: 1.2rem;
-		letter-spacing: 0.05em;
-		line-height: 1.167;
-		font-weight: 600;
-		margin: 2rem 0rem .4rem;
-
-		@include breakpoint-down(mobile) {
-			font-size: 1.4rem;
-			line-height: 1;
-			margin:.8rem 0 .4rem;
-		}
-	}
-
-	li > span {
-		font-size: 1.2rem;
-		letter-spacing: 0.05em;
-		line-height: 1.167;
-		font-weight: 600;
-		color: #777777;
-		font-family: $ff-clash-display;
-
-		@include breakpoint-down(mobile) {
-			font-size: 1.4rem;
-			line-height: 1;
-		}
-	}
 }

@@ -168,3 +168,52 @@
 		}
 	}
 }
+
+/*  section category secondary  */
+
+.section-category--secondary {
+	padding-bottom: 6rem;
+
+	@include breakpoint-down(mobile) {
+		padding: .3rem 0rem 6rem;
+	}
+
+	h2 {
+		@include breakpoint-down(mobile) {
+			text-align: center;
+			margin-bottom: 4rem;
+		}
+	}
+
+	.section__image {
+		position: relative;
+		min-height: 40rem;
+
+		@include breakpoint-down(mobile) {
+			min-height: 28.5rem;
+		}
+	}
+
+	.section__body {
+		max-width: 100%;
+	}
+
+	.section__body-head {
+		text-align: center;
+		margin-bottom: 8rem;
+	}
+
+	.section__body-head h3 {
+		font-weight: 600;
+		line-height: 1;
+		letter-spacing: 0.05em;
+		margin-bottom: 4rem;
+	}
+
+	.section__entry {
+		max-width: 69rem;
+		margin: 0 auto;
+		font-size: 1.4rem;
+		line-height: 1.57;
+	}
+}
