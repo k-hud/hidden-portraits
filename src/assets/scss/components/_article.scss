@@ -274,6 +274,14 @@
 		max-width: 47rem;
 	}
 
+	.article__head-actions {
+		display: flex;
+	}
+
+	.article__btn + .article__btn {
+		margin-left: 2rem;
+	}
+
 	.article__btn {
 		padding: .9rem 1.4rem;
 		display: inline-flex;
