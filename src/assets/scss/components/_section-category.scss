@@ -196,11 +196,20 @@
 
 	.section__body {
 		max-width: 100%;
+
+		@include breakpoint-down(mobile) {
+			padding: 4.4rem 0rem 1.9rem;
+		}
 	}
 
 	.section__body-head {
 		text-align: center;
 		margin-bottom: 8rem;
+
+		@include breakpoint-down(mobile) {
+			padding: 0rem 1rem 0rem 1rem;
+			margin-bottom: 3.8rem;
+		}
 	}
 
 	.section__body-head h3 {
@@ -208,6 +217,11 @@
 		line-height: 1;
 		letter-spacing: 0.05em;
 		margin-bottom: 4rem;
+
+		@include breakpoint-down(mobile) {
+			font-size: 2rem;
+			margin-bottom: 2.2rem;
+		}
 	}
 
 	.section__entry {

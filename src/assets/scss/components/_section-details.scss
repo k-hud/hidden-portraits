@@ -65,7 +65,7 @@
   }
 
   .section__body {
-    padding: 8rem 0;
+    padding: 8rem 0 6.2rem;
 
     @include breakpoint-down(tablet) {
       padding: 6.1rem 0;
@@ -77,7 +77,7 @@
   }
 
   .section__body-inner {
-    padding: 7.6rem 0;
+    padding: 6.6rem 0 0;
 
     @include breakpoint-down(mobile) {
       padding: 0 .8rem;
@@ -85,7 +85,7 @@
   }
 
   .section__link {
-    padding: 0rem .5rem;
+    padding: 0rem;
     margin-bottom: 1rem;
   }
 }

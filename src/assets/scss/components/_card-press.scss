@@ -3,6 +3,7 @@
 \* ------------------------------------------------------------ */
 
 .card-press {
+	position: relative;
 	display: flex;
 	font-size: 1rem;
 	line-height: 1.2;
@@ -17,6 +18,18 @@
 
 	&:not(:last-child) {
 		margin-bottom: 4rem;
+	}
+
+	&:hover .card__image {
+		opacity: .8;
+	}
+
+	.card__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 
 	.card__content {
@@ -37,6 +50,7 @@
 	.card__image {
 		position: relative;
 		width: 20rem;
+		transition: opacity .3s;
 
 		@include breakpoint-down(mobile-medium) {
 			width: 14.5rem;

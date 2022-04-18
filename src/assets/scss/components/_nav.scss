@@ -51,9 +51,79 @@
 \* ------------------------------------------------------------ */
 
 .nav--alt {
+	@include breakpoint-down(tablet) {
+		padding-bottom: 4rem;
+		border-bottom: 1px solid #FFFFFF;
+	}
+
+	> ul {
+		@include breakpoint-down(tablet) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	li + li {
+		margin-left: 4rem;
+
+		@include breakpoint-down(tablet) {
+			margin-left: 0;
+			margin-top: 4rem;
+		}
+
+		@media only screen and (max-height: 435px) and (orientation: landscape) {
+			margin-top: 2.5rem;
+		}
+	}
+
+	ul > li:nth-child(2) {
+		@include breakpoint-down(tablet) {
+			order: 3;
+		}
+	}
+
+	ul > li:nth-child(3) {
+		@include breakpoint-down(tablet) {
+			order: 2;
+		}
+	}
+
+	ul > li:first-child {
+		@include breakpoint-down(tablet) {
+			order: 1;
+		}
+	}
+
 	a {
 		font-size: 1.2rem;
 		line-height: 1.167;
 		letter-spacing: 0.05em;
+
+		@include breakpoint-down(tablet) {
+			font-size: 2.2rem;
+			line-height: 1;
+			font-weight: 600;
+		}
+	}
+
+	li > ul {
+		display: none;
+		text-align: left;
+		padding: 3rem 0rem 0 3rem;
+
+		@include breakpoint-down(tablet) {
+			display: block;
+		}
+	}
+
+	li > ul a {
+		font-size: 1.4rem;
+		line-height: 1;
+		letter-spacing: 0.05em;
+		font-weight: 600;
+	}
+
+	li > ul li + li {
+		margin-top: 3rem;
 	}
 }

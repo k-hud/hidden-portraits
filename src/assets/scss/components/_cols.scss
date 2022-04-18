@@ -71,7 +71,7 @@
 .cols--secondary {
   margin: 0rem -3rem;
 
-  @include breakpoint-down(small-desktop) {
+  @include breakpoint-down(large-desktop) {
     margin: 0 -1.5rem;
   }
 
@@ -83,7 +83,7 @@
   .cols__col {
     padding: 0rem 3rem;
 
-    @include breakpoint-down(small-desktop) {
+    @include breakpoint-down(large-desktop) {
       padding: 0 1.5rem;
     }
 
@@ -138,7 +138,7 @@
 .cols--basic {
   margin: -2rem -3rem;
 
-  @include breakpoint-down(small-desktop) {
+  @include breakpoint-down(large-desktop) {
     margin: -2rem -1.5rem;
   }
 
@@ -146,16 +146,24 @@
     margin: -2rem -1rem;
   }
 
+  @include breakpoint-down(mobile) {
+    margin: -2rem 0rem;
+  }
+
 
   .cols__col {
     padding: 2rem 3rem;
 
-    @include breakpoint-down(small-desktop) {
+    @include breakpoint-down(large-desktop) {
       padding: 2rem 1.5rem;
     }
 
     @include breakpoint-down(tablet) {
       padding: 2rem 1rem;
+    }
+
+    @include breakpoint-down(mobile) {
+      padding: 2rem 0;
     }
   }
 }

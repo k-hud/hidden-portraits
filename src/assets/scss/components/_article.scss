@@ -272,6 +272,10 @@
 
 	.article__head p {
 		max-width: 47rem;
+
+		@include breakpoint-down(mobile) {
+			margin: 0 auto;
+		}
 	}
 
 	.article__head-actions {
@@ -347,6 +351,7 @@
 
 		@include breakpoint-down(mobile) {
 			max-width: 100%;
+			text-align: center;
 		}
 	}
 

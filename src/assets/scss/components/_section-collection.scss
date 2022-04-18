@@ -51,7 +51,7 @@
 
 		@include breakpoint-down(tablet) {
 			flex: 0 0 28rem;
-			max-width: 30rem;
+			max-width: 28rem;
 		}
 
 		@include breakpoint-down(mobile) {

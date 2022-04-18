@@ -191,10 +191,77 @@
     }
   }
 
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint-down(tablet) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      overflow-y: auto;
+      background: $c-black;
+      color: $c-white;
+      width: 100%;
+      z-index: 10;
+      padding: 12rem 1.75rem 3rem;
+      text-align: center;
+      display: block;
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+    }
+
+    @media only screen and (max-height: 435px) and (orientation: landscape) {
+      padding: 8rem 1.75rem 3rem;
+    }
+  }
+
   .header__socials a,
   .header__socials li {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .header__socials li + li {
+    @include breakpoint-down(tablet) {
+      margin-left: 2rem;
+    }
+  }
+
+  .header__logo {
+    position: relative;
+    z-index: 11;
+  }
+
+  .header__logo svg {
+    transition: opacity .3s, visibility .3s;
+  }
+
+  .header__logo svg:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .header__socials .ico-twitter {
+    @include breakpoint-down(tablet) {
+      width: 2.4rem;
+      height: 2rem;
+    }
+  }
+
+  .header__socials .ico-instagram {
+    @include breakpoint-down(tablet) {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 }

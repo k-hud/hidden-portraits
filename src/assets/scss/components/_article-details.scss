@@ -91,6 +91,7 @@
 
 		@include breakpoint-down(mobile) {
 			max-width: 100%;
+			text-align: center;
 		}
 	}
 
@@ -120,6 +121,10 @@
 
 	.article__head p {
 		max-width: 55rem;
+
+		@include breakpoint-down(mobile) {
+			margin: 0 auto;
+		}
 	}
 
 	.article__head-actions {

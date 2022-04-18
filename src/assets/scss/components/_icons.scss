@@ -108,6 +108,11 @@
 .ico-email-secondary {
 	width: 2.4rem;
 	height: 1.5rem;
+
+	@include breakpoint-down(tablet) {
+		width: 3.2rem;
+		height: 2rem;
+	}
 }
 
 .ico-link-back {
@@ -153,6 +158,8 @@
 }
 
 .ico-medium2 {
+	width: 8rem;
+	height: 2rem;
 	@include breakpoint-down(mobile-medium) {
 		width: 6.1rem;
 		height: 1.5rem;

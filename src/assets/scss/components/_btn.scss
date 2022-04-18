@@ -129,6 +129,7 @@
   text-transform: uppercase;
   background: $c-white;
   color: #000;
+  border-radius: 0;
   transition: color .3s, background .3s;
 
   @include breakpoint-down(mobile) {
