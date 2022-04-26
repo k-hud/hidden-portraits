@@ -11,16 +11,13 @@
 		padding: 4rem 0;
 	}
 
-	h3 {
+	h4 {
 		color: #777777;
 		font-weight: 600;
 		line-height: 1;
 		letter-spacing: 0.05em;
 		margin-bottom: 3rem;
-
-		@include breakpoint-down(mobile) {
-			font-size: 2rem;
-		}
+		font-size: 2rem;
 	}
 
 	.section__inner {

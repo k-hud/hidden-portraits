@@ -3,17 +3,11 @@
 \* ------------------------------------------------------------ */
 
 .event {
-	font-size: 1.2rem;
-	line-height: 1.167;
 	border-bottom: 1px solid #DADADA;
 	padding-bottom: 2rem;
 
 	& + & {
 		margin-top: 2rem;
-	}
-
-	p {
-		line-height: 1.167 !important;
 	}
 
 	.event__image {
@@ -80,15 +74,7 @@
 
 .event--secondary {
 	@include breakpoint-down(mobile) {
-		font-size: 1.4rem;
-		line-height: 1.57;
 		padding-bottom: 1.5rem;
-	}
-
-	p {
-		@include breakpoint-down(mobile) {
-			line-height: 1.57 !important;
-		}
 	}
 
 	p:not(:last-child) {
