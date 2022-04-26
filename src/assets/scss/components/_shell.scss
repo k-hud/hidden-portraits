@@ -9,6 +9,11 @@
 	margin: auto;
 	width: 100%;
 
+	@include breakpoint-down(tablet) {
+		padding-left: 3.4rem;
+		padding-right: 3.4rem;
+	}
+
 	@include breakpoint-down(mobile) {
 		padding-left: 1.7rem;
 		padding-right: 1.7rem;

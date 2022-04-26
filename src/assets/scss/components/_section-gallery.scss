@@ -5,6 +5,10 @@
 .section-gallery {
 	padding: 8rem 0;
 
+	@include breakpoint-down(tablet) {
+		padding: 5.8rem 0 6rem;
+	}
+
 	@include breakpoint-down(mobile) {
 		padding: 4rem 1rem 4rem 1.1rem;
 	}
@@ -15,7 +19,13 @@
 		align-items: center;
 		margin-bottom: 2.8rem;
 
+		@include breakpoint-down(tablet) {
+			justify-content: center;
+			margin-bottom: 5rem;
+		}
+
 		@include breakpoint-down(mobile) {
+			justify-content: flex-start;
 			margin-bottom: 3rem;
 		}
 	}
@@ -25,10 +35,18 @@
 		line-height: 1;
 		letter-spacing: 0.07em;
 		margin-bottom: 1rem;
+
+		@include breakpoint-down(tablet) {
+			letter-spacing: 0.05em;
+		}
 	}
 }
 
 .section-gallery--alt {
+	@include breakpoint-down(tablet) {
+		padding: 4rem 0 5.8rem;
+	}
+
 	@include breakpoint-down(mobile) {
 		padding: 4rem 0;
 	}

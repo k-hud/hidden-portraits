@@ -61,8 +61,12 @@
 .info--alt {
 	padding: 2.9rem;
 
+	@include breakpoint-down(tablet) {
+		padding:3.9rem;
+	}
+
 	@include breakpoint-down(mobile) {
-		padding: 2.5rem;
+		padding:1.3rem 2.5rem;
 	}
 
 	h3 {
@@ -73,8 +77,31 @@
 	.info__title {
 		margin-bottom: .7rem;
 
+		@include breakpoint-down(tablet) {
+			margin-bottom: .6rem;
+			min-height: 3rem;
+		}
+
 		@include breakpoint-down(mobile) {
 			margin-bottom: 2.1rem;
+			min-height: 0;
+		}
+	}
+
+	.info__title p {
+		@include breakpoint-down(tablet) {
+			margin-bottom: 0;
+			font-family: $ff-clash-display;
+			font-size: 1rem;
+			line-height: 1;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.05rem;
+			padding-bottom: 1.9rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding-bottom: 0;
 		}
 	}
 
@@ -92,6 +119,10 @@
 .info--secondary {
 	padding: 2.9rem;
 
+	@include breakpoint-down(tablet) {
+		padding: 1.9rem 3.9rem;
+	}
+
 	@include breakpoint-down(mobile) {
 		padding: 2.1rem;
 	}
@@ -104,8 +135,14 @@
 	.info__title {
 		margin-bottom: .7rem;
 
+		@include breakpoint-down(tablet) {
+			margin-bottom: .6rem;
+			min-height: 3rem;
+		}
+
 		@include breakpoint-down(mobile) {
 			margin-bottom: 2.1rem;
+			min-height: 0;
 		}
 	}
 

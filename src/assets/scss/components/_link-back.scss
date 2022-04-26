@@ -14,7 +14,7 @@
 	text-transform: uppercase;
 	transition: opacity .3s;
 
-	@include breakpoint-down(mobile) {
+	@include breakpoint-down(tablet) {
 		font-size: 1rem;
 		line-height: 1;
 	}
@@ -26,7 +26,7 @@
 	i {
 		margin-right: 2rem;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			margin-right: 1rem;
 		}
 	}

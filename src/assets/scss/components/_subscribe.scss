@@ -49,6 +49,10 @@
 		letter-spacing: 0.05em;
 		font-weight: 600;
 		line-height: 1.4;
+
+		@include breakpoint-down(tablet) {
+			padding: .8rem;
+		}
 	}
 }
 

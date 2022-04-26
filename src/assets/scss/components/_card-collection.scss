@@ -6,7 +6,7 @@
 	max-width: 100%;
 	margin-bottom: 8rem;
 
-	@include breakpoint-down(mobile) {
+	@include breakpoint-down(tablet) {
 		margin: 0rem 0 4rem;
 	}
 
@@ -15,11 +15,10 @@
 		height: 46.4rem;
 
 		@include breakpoint-down(tablet) {
-			height: 40rem;
+			height: 37.5rem;
 		}
 
 		@include breakpoint-down(mobile) {
-			height: 37.5rem;
 			width: calc(100% + 3.4rem);
 			margin-left: -1.7rem;
 		}
@@ -42,13 +41,14 @@
 
 		@include breakpoint-down(tablet) {
 			width: 100%;
-			padding: 6rem;
+			max-width: calc(100% - 3.6rem);
+			padding: 4.8rem 2rem 4.8rem 1.8rem;
+			margin: -4rem 1.8rem 0rem;
 		}
 
 		@include breakpoint-down(mobile) {
 			margin: -4rem 0rem 0rem;
 			max-width: 100%;
-			padding: 4.8rem 2rem 4.8rem 1.9rem;
 		}
 	}
 
@@ -70,7 +70,7 @@
 		width: 10rem;
 		background-color: #000;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			width: 5rem;
 		}
 	}
@@ -80,6 +80,10 @@
 		line-height: 1;
 		letter-spacing: 0.07em;
 		margin: 0rem 0rem 2rem 0;
+
+		@include breakpoint-down(tablet) {
+			letter-spacing: 0.05em;
+		}
 	}
 
 	p:not(:last-child) {
@@ -94,11 +98,7 @@
 		padding: 5rem 10.1rem;
 
 		@include breakpoint-down(tablet) {
-			padding: 6rem;
-		}
-
-		@include breakpoint-down(mobile) {
-			padding: 4.8rem 2rem 4.8rem 1.9rem;
+			padding: 4.8rem 2rem 4.8rem 1.8rem;
 		}
 	}
 }

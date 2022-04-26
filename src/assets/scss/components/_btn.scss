@@ -132,7 +132,7 @@
   border-radius: 0;
   transition: color .3s, background .3s;
 
-  @include breakpoint-down(mobile) {
+  @include breakpoint-down(tablet) {
     font-size: 1rem;
     line-height: 1;
   }

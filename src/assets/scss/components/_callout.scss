@@ -5,6 +5,10 @@
 .callout-small {
 	padding: 2rem 0;
 
+	@include breakpoint-down(tablet) {
+		padding-bottom: 0;
+	}
+
 	.callout__head {
 		margin-bottom: 2rem;
 	}
@@ -30,12 +34,12 @@
 .callout-small--alt {
 	padding: 0;
 
-	@include breakpoint-down(mobile) {
+	@include breakpoint-down(tablet) {
 		text-align: center;
 	}
 
 	h4 {
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			text-align: center;
 			font-size: 1rem;
 			line-height: 1;

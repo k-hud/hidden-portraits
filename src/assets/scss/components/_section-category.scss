@@ -7,7 +7,7 @@
 	font-size: 1.4rem;
 	line-height: 1.57;
 
-	@include breakpoint-down(mobile) {
+	@include breakpoint-down(tablet) {
 		padding: .3rem 0rem 0rem;
 	}
 
@@ -20,6 +20,10 @@
 	.section__image {
 		position: relative;
 		min-height: 60rem;
+
+		@include breakpoint-down(tablet) {
+			min-height: 40rem;
+		}
 
 		@include breakpoint-down(mobile) {
 			min-height: 28.5rem;
@@ -43,6 +47,14 @@
 	.section__head {
 		text-align: center;
 		border-bottom: solid .1rem $c-black;
+
+		@include breakpoint-down(tablet) {
+			padding-top: 2rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 0;
+		}
 	}
 
 	.section__head-inner {
@@ -54,10 +66,24 @@
 		}
 	}
 
+	.section__head-inner img {
+		@include breakpoint-down(tablet) {
+			max-width: 32rem;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			max-width: 29rem;
+		}
+	}
+
 	.section__body {
 		max-width: 114rem;
 		margin: 0 auto;
 		padding: 8rem 0 1.9rem;
+
+		@include breakpoint-down(tablet) {
+			padding: 6rem 0rem 2rem;
+		}
 
 		@include breakpoint-down(mobile) {
 			padding: 4rem 1.2rem 1.9rem 1rem;
@@ -71,7 +97,8 @@
 		margin: 0rem -1rem;
 
 		@include breakpoint-down(tablet) {
-			margin: 0 ;
+			padding: 3.7rem 0 2rem;
+			margin: 0;
 		}
 
 		@include breakpoint-down(mobile) {
@@ -124,7 +151,7 @@
 		line-height: 1;
 		margin-bottom: 4rem;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			letter-spacing: 0.05em;
 			margin-bottom: 2.2rem;
 		}
@@ -146,6 +173,10 @@
 	.section__content + .section__content {
 		margin-top: 8rem;
 
+		@include breakpoint-down(tablet) {
+			margin-top: 6.2rem;
+		}
+
 		@include breakpoint-down(mobile) {
 			margin-top: 8.9rem;
 		}
@@ -162,9 +193,31 @@
 	}
 
 	h2 {
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			text-align: center;
 			margin-bottom: 4rem;
+		}
+	}
+
+	.section__head-inner {
+		padding: 4rem 0;
+
+		@include breakpoint-down(tablet) {
+			padding: 2rem 0 4rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 4rem 1rem;
+		}
+	}
+
+	.section__body {
+		@include breakpoint-down(tablet) {
+			padding: 6rem 0rem 0rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 4rem 1.2rem 1.9rem 1rem;
 		}
 	}
 }
@@ -176,6 +229,10 @@
 
 	@include breakpoint-down(mobile) {
 		padding: .3rem 0rem 6rem;
+	}
+
+	.section__link {
+		padding: 4rem 0 0;
 	}
 
 	h2 {
@@ -194,6 +251,21 @@
 		}
 	}
 
+	.section__image img {
+		object-position: top center;
+	}
+
+	.section__head {
+
+		@include breakpoint-down(tablet) {
+			padding-top: 0rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 0;
+		}
+	}
+
 	.section__body {
 		max-width: 100%;
 
@@ -205,6 +277,10 @@
 	.section__body-head {
 		text-align: center;
 		margin-bottom: 8rem;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 6rem;
+		}
 
 		@include breakpoint-down(mobile) {
 			padding: 0rem 1rem 0rem 1rem;
@@ -218,8 +294,13 @@
 		letter-spacing: 0.05em;
 		margin-bottom: 4rem;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			font-size: 2rem;
+			line-height: 1;
+			margin-bottom: 2rem;
+		}
+
+		@include breakpoint-down(mobile) {
 			margin-bottom: 2.2rem;
 		}
 	}
@@ -229,5 +310,9 @@
 		margin: 0 auto;
 		font-size: 1.4rem;
 		line-height: 1.57;
+
+		@include breakpoint-down(tablet) {
+			max-width: 50rem;
+		}
 	}
 }

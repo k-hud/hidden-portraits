@@ -16,8 +16,8 @@
 		margin-left: 0;
 	}
 
-	&:not(:last-child) {
-		margin-bottom: 4rem;
+	@include breakpoint-down(mobile) {
+		margin: 0 auto;
 	}
 
 	&:hover .card__image {
@@ -39,7 +39,7 @@
 		border-top: solid .5rem $c-black;
 		padding: 3.4rem 5rem;
 
-		@include breakpoint-down(mobile-medium) {
+		@include breakpoint-down(tablet) {
 			flex: 0 0 calc(100% - 14.5rem);
 			max-width: calc(100% - 14.5rem);
 			border-top: solid .2rem $c-black;
@@ -52,7 +52,7 @@
 		width: 20rem;
 		transition: opacity .3s;
 
-		@include breakpoint-down(mobile-medium) {
+		@include breakpoint-down(tablet) {
 			width: 14.5rem;
 		}
 	}
@@ -74,7 +74,7 @@
 	.card__head {
 		padding-bottom: .7rem;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			padding-bottom: .5rem;
 		}
 	}
@@ -88,7 +88,7 @@
 		max-width: 19.8rem;
 		margin: 0 auto 1rem;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			font-size: 1rem;
 			line-height: 1;
 		}
@@ -98,7 +98,7 @@
 		line-height: 1.2;
 		margin-bottom: 1.2rem;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			margin-bottom: .4rem;
 		}
 	}
@@ -108,7 +108,7 @@
 		position: relative;
 		padding: 2rem 0 0;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			padding: 1.1rem 0rem 0;
 		}
 

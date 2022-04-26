@@ -7,6 +7,10 @@
 	text-align: center;
 	background-color: #F9F9F9;
 
+	@include breakpoint-down(tablet) {
+		padding: 6rem 0;
+	}
+
 	@include breakpoint-down(mobile) {
 		padding: 4rem 0;
 	}
@@ -18,6 +22,18 @@
 		letter-spacing: 0.05em;
 		margin-bottom: 3rem;
 		font-size: 2rem;
+
+		@include breakpoint-down(tablet) {
+			font-size: 1.2rem;
+			line-height: 1.167;
+			margin-bottom: 2.8rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 1rem;
+			line-height: 1;
+			margin-bottom: 3rem;
+		}
 	}
 
 	.section__inner {

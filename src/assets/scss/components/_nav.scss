@@ -119,7 +119,7 @@
 		opacity: 0;
 		visibility: hidden;
 		position: absolute;
-		top: calc(100% + 2.2rem);
+		top: calc(100% + 2.1rem);
 		left: -6rem;
 		min-width: 32rem;
 		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.07);
@@ -135,6 +135,8 @@
 		}
 
 		@include breakpoint-down(tablet) {
+			opacity: 1;
+			visibility: visible;
 			padding: 3rem 0rem 0 3rem;
 			min-width: 0;
 			display: block;
@@ -150,7 +152,7 @@
 		bottom: 100%;
 		left: 0;
 		width: 100%;
-		height: 2.4rem;
+		height: 2.2rem;
 	}
 
 	li > ul a {

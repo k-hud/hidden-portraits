@@ -11,6 +11,10 @@
 	&:not(:last-child) {
 		padding: 4rem 0rem 8rem 0rem;
 
+		@include breakpoint-down(tablet) {
+			padding: 4rem 0rem 3.8rem 0rem;
+		}
+
 		@include breakpoint-down(mobile) {
 			padding: 4rem 0rem 4rem 0rem;
 		}
@@ -26,7 +30,7 @@
 		font-size: 3rem;
 		font-weight: 600;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			font-size: 2rem;
 			line-height: 1;
 		}
@@ -41,8 +45,13 @@
 		max-width: 5.2rem;
 		margin-left: -.2rem;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			margin-left: 0;
+			flex:  0 0 4.5rem;
+			max-width: 4.5rem;
+		}
+
+		@include breakpoint-down(mobile) {
 			flex:  0 0 4.1rem;
 			max-width: 4.1rem;
 		}

@@ -84,8 +84,8 @@
 	}
 
 	h6 span {
-		font-size: 1.2rem;
-		line-height: 1.167;
+		font-size: 1.4rem;
+		line-height: 1;
 	}
 
 	li + li {
@@ -103,8 +103,8 @@
 
 .list-details--secondary {
 	h6 {
-		font-size: 1.2rem;
-		line-height: 1.167;
+		font-size: 1.4rem;
+		line-height: 1.286;
 		margin-bottom: 0;
 	}
 
@@ -122,6 +122,6 @@
 	}
 
 	.list-details-dots {
-		margin: 0 1.8rem;
+		margin: 0 1rem 0 .2rem;
 	}
 }

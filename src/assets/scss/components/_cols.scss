@@ -76,6 +76,10 @@
   }
 
   @include breakpoint-down(tablet) {
+    margin: 0rem -3rem;
+  }
+
+  @include breakpoint-down(mobile) {
     margin: 0 -1rem;
   }
 
@@ -88,6 +92,10 @@
     }
 
     @include breakpoint-down(tablet) {
+      padding: 0rem 3rem;
+    }
+
+    @include breakpoint-down(mobile) {
       padding: 0 1rem;
     }
   }
@@ -104,11 +112,19 @@
     margin: 0rem -1.5rem;
   }
 
+  @include breakpoint-down(tablet) {
+    margin: 0rem -1rem;
+  }
+
   .cols__col {
     padding: 0rem 4rem;
 
     @include breakpoint-down(large-desktop) {
       padding: 0rem 1.5rem;
+    }
+
+    @include breakpoint-down(tablet) {
+      padding: 0rem 1rem;
     }
   }
 }

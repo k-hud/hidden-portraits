@@ -6,6 +6,10 @@
 	border-bottom: 1px solid #DADADA;
 	padding-bottom: 2rem;
 
+	@include breakpoint-down(tablet) {
+		padding-bottom: 1.8rem;
+	}
+
 	& + & {
 		margin-top: 2rem;
 	}
@@ -39,6 +43,10 @@
 	p:not(:last-child) {
 		margin-bottom: .4rem;
 
+		@include breakpoint-down(tablet) {
+			margin-bottom: .2rem;
+		}
+
 		@include breakpoint-down(mobile) {
 			margin-bottom: .2rem;
 		}
@@ -50,6 +58,12 @@
 		letter-spacing: 0.05em;
 		margin: 0rem 0rem 0.4rem 0;
 
+		@include breakpoint-down(tablet) {
+			font-size: 1.2rem;
+			line-height: 1;
+			margin: 0rem 0rem 0.6rem 0;
+		}
+
 		@include breakpoint-down(mobile) {
 			font-size: 1.4rem;
 			line-height: 1;
@@ -57,7 +71,7 @@
 	}
 
 	.event__actions {
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			text-align: right;
 		}
 	}
@@ -96,6 +110,10 @@
 		background-color: #fff;
 		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.07);
 
+		@include breakpoint-down(tablet) {
+			height: 13.8rem;
+		}
+
 		@include breakpoint-down(mobile) {
 			height: auto;
 		}
@@ -108,6 +126,16 @@
 
 		@include breakpoint-down(mobile) {
 			object-fit: initial;
+		}
+	}
+
+	.event__actions {
+		@include breakpoint-down(tablet) {
+			margin-top: .5rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-top: 0;
 		}
 	}
 }

@@ -207,6 +207,8 @@
 
 		@include breakpoint-down(tablet) {
 			padding-right: 3rem;
+			flex: 0 0 51.4%;
+			max-width: 51.4%;
 		}
 
 		@include breakpoint-down(mobile) {
@@ -221,6 +223,11 @@
 		padding-top: .5rem;
 		flex: 0 0 38.3%;
 		max-width: 38.3%;
+
+		@include breakpoint-down(tablet) {
+			flex: 0 0 48.6%;
+			max-width: 48.6%;
+		}
 
 		@include breakpoint-down(mobile) {
 			max-width: 100%;
@@ -241,7 +248,7 @@
 	}
 
 	.article__caption {
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			margin-top: .9rem;
 			line-height: 1;
 		}
@@ -253,28 +260,50 @@
 \* ------------------------------------------------------------ */
 
 .article--secondary {
-	@include breakpoint-down(mobile) {
+	@include breakpoint-down(tablet) {
 		font-size: 1.4rem;
 		line-height: 1.57;
 	}
 
 	p {
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			line-height: 1.57;
 		}
 	}
+
 	.article__head {
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			text-align: center;
 			margin-bottom: 4rem;
+			width: 100%;
+		}
+	}
+
+	.article__head h1 {
+		@include breakpoint-down(tablet) {
+			line-height: 1;
+			letter-spacing: 0.05em;
+			margin-bottom: 2.2rem;
 		}
 	}
 
 	.article__head p {
 		max-width: 47rem;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			margin: 0 auto;
+		}
+	}
+
+	.article__head p + h3 {
+		@include breakpoint-down(tablet) {
+			margin-top: 1.8rem;
+		}
+	}
+
+	.article__head h3 {
+		@include breakpoint-down(tablet) {
+			margin-bottom: 1.8rem;
 		}
 	}
 
@@ -295,7 +324,7 @@
 		letter-spacing: 0.05em;
 		margin-bottom: 0;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			font-size: 1rem;
 			line-height: 1;
 			padding: .7rem 1.2rem;
@@ -320,6 +349,14 @@
 
 	.article__image + .article__entry {
 		margin-top: 3.8rem;
+
+		@include breakpoint-down(tablet) {
+			margin-top: 0;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-top: 3.8rem;
+		}
 	}
 
 	.article__entry {
@@ -330,7 +367,7 @@
 		margin-top: 1.6rem;
 	}
 
-	p:not(:last-child) {
+	p {
 		margin-bottom: 0;
 	}
 
@@ -342,6 +379,12 @@
 		padding-top: .5rem;
 		flex: 0 0 37.5%;
 		max-width: 37.5%;
+
+		@include breakpoint-down(tablet) {
+			padding: 0rem 0rem 0rem .3rem;
+		}
+
+		margin: 0rem;
 	}
 
 	.article__image {
@@ -360,7 +403,7 @@
 	}
 
 	.article__caption {
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			margin-top: 1rem;
 			line-height: 1;
 		}

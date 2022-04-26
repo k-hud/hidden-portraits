@@ -80,6 +80,10 @@
 .section.section-about--alt {
 	padding-top: 4rem;
 
+	@include breakpoint-down(tablet) {
+		padding: .2rem 0rem 0 0;
+	}
+
 	@include breakpoint-down(mobile) {
 		padding: .2rem 0rem 0 0;
 	}
@@ -96,7 +100,7 @@
 		padding-bottom: 7.8rem;
 
 		@include breakpoint-down(tablet) {
-			padding: 6.1rem 0;
+			padding: 3.7rem 0 4rem;
 		}
 
 		@include breakpoint-down(mobile) {

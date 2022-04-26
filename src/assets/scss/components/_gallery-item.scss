@@ -201,6 +201,10 @@
 .gallery-item--secondary {
   padding-top: 41.6%;
 
+  @include breakpoint-down(tablet) {
+    padding-top: 52.2%;
+  }
+
   @include breakpoint-down(mobile) {
     padding-top: 100%;
   }

@@ -9,13 +9,18 @@
 	list-style-type: none;
 	padding: 3rem 0;
 
-	@include breakpoint-down(mobile) {
+	@include breakpoint-down(tablet) {
 		padding: 1.9rem 0;
 	}
 
 	li + li {
 		margin-left: 2rem;
 		padding-left: 2rem;
+
+		@include breakpoint-down(tablet) {
+			margin-left: 1rem;
+			padding-left: 1rem;
+		}
 	}
 
 	li + li:after {
@@ -28,7 +33,7 @@
 		left: 0;
 		transform: translateY(-50%);
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			height: 2rem;
 		}
 	}
@@ -47,7 +52,7 @@
 		display: flex;
 		align-items: center;
 
-		@include breakpoint-down(mobile) {
+		@include breakpoint-down(tablet) {
 			font-size: 1rem;
 			line-height: 1;
 			min-height: 2rem;
@@ -67,5 +72,24 @@
 	a i,
 	a img {
 		margin-right: 1rem;
+
+		@include breakpoint-down(tablet) {
+			margin-right: 1rem;
+		}
+	}
+
+	a i,
+	a img {
+		width: 3rem;
+		height: 3rem;
+
+		@include breakpoint-down(tablet) {
+			width: 2rem;
+			height: 2rem;
+		}
+	}
+
+	a i svg {
+		fill: $c-black;
 	}
 }

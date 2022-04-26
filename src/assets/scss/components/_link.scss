@@ -25,6 +25,10 @@
 .link--more {
 	margin-top: 1.5rem;
 
+	@include breakpoint-down(tablet) {
+		margin-top: .8rem;
+	}
+
 	@include breakpoint-down(mobile) {
 		margin-top: .6rem;
 	}
