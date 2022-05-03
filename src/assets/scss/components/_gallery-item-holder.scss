@@ -5,6 +5,10 @@
 .gallery-item-holder {
 	max-height: 70rem;
 
+	@include breakpoint-down(mobile) {
+		max-height: none;
+	}
+
 	& +  & {
 		margin-top: 3.6rem;
 
