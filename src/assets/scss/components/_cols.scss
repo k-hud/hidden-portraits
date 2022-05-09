@@ -164,6 +164,16 @@
 
   @include breakpoint-down(mobile) {
     margin: -2rem 0rem;
+    display: block;
+    margin: 0;
+    columns: 2;
+    column-gap: 2rem;
+    break-inside: avoid;
+  }
+
+  @include breakpoint-down(mobile-medium) {
+    columns: 1;
+    column-gap: 0rem;
   }
 
 
@@ -179,7 +189,8 @@
     }
 
     @include breakpoint-down(mobile) {
-      padding: 2rem 0;
+      padding: 0;
+      display: contents;
     }
   }
 }
