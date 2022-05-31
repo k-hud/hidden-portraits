@@ -143,6 +143,24 @@
 	}
 }
 
+.about-link {
+	width: 3rem;
+	height: 3rem;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	@include breakpoint-down(mobile) {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	svg {
+		fill: $c-black;
+	}
+}
+
+
 .ico-open-sea2 {
 	width: 2.4rem;
 	height: 2.4rem;
