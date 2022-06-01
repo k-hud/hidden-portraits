@@ -107,7 +107,7 @@
 	.article__entry {
 		display: block;
 		max-width: 55rem;
-		margin-left: auto;
+		
 
 		@include breakpoint-down(mobile) {
 			max-width: 100%;
