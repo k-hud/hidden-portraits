@@ -55,18 +55,22 @@
 		flex: 0 0 62.5%;
 		max-width: 62.5%;
 		padding-right: 10rem;
+		padding-top: 5rem;
 
 		@include breakpoint-down(small-desktop) {
 			padding-right: 5rem;
+			padding-top: 3rem;
 		}
 
 		@include breakpoint-down(tablet) {
 			padding-right: 3rem;
+			padding-top: 3rem;
 		}
 
 		@include breakpoint-down(mobile) {
 			max-width: 100%;
 			padding: 0;
+			padding-top: 3rem;
 		}
 	}
 
@@ -203,12 +207,14 @@
 
 		@include breakpoint-down(small-desktop) {
 			padding-right: 5rem;
+			padding-top: 3rem;
 		}
 
 		@include breakpoint-down(tablet) {
 			padding-right: 3rem;
 			flex: 0 0 51.4%;
 			max-width: 51.4%;
+			padding-top: 3rem;
 		}
 
 		@include breakpoint-down(mobile) {
@@ -216,6 +222,7 @@
 			flex: 0 0 100%;
 			padding: 0;
 			order: 2;
+			padding-top: 3rem;
 		}
 	}
 
