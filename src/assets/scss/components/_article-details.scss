@@ -196,13 +196,45 @@
 		}
 	}
 
+
+
+
+
 	.article__btn i {
 		margin-right: 1rem;
 	}
 
 	.article__btn:hover  img {
-		display: none;
+		display: block;
+	
 	}
+
+	.article__btn_mp {
+		padding: .9rem 1.4rem;
+		display: inline-flex;
+		align-items: center;
+		font-size: 1.2rem;
+		line-height: 1.167;
+		letter-spacing: 0.05em;
+		margin-bottom: 0;
+		margin-right: 10px;
+
+		@include breakpoint-down(tablet) {
+			font-size: 1rem;
+			line-height: 1;
+			padding: .7rem 1.4rem;
+		}
+	}
+
+	.article__btn_mp i {
+		margin-right: 1rem;
+	}
+
+	.article__btn_mp:hover img {
+		display: block;
+		filter: invert(1);
+	}
+	
 
 	.article__btn-hover {
 		display: none;
@@ -211,6 +243,8 @@
 	.article__btn:hover .article__btn-hover {
 		display: block;
 	}
+
+	
 
 	.article__entry {
 		display: block;
