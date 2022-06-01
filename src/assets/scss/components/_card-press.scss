@@ -1,0 +1,140 @@
+/* ------------------------------------------------------------ *\
+	Card press
+\* ------------------------------------------------------------ */
+
+.card-press {
+	position: relative;
+	display: flex;
+	font-size: 1rem;
+	line-height: 1.2;
+	color: #777777;
+	box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.07);
+	max-width: 55rem;
+	margin-left: auto;
+
+	@include breakpoint-down(tablet) {
+		margin-left: 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		margin: 0 auto;
+	}
+
+	&:hover .card__image {
+		opacity: .8;
+	}
+
+	.card__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.card__content {
+		flex: 0 0 calc(100% - 20rem);
+		max-width: calc(100% - 20rem);
+		text-align: center;
+		border-top: solid .5rem $c-black;
+		padding: 3.4rem 5rem;
+
+		@include breakpoint-down(tablet) {
+			flex: 0 0 calc(100% - 14.5rem);
+			max-width: calc(100% - 14.5rem);
+			border-top: solid .2rem $c-black;
+			padding: 1.7rem 1.8rem;
+		}
+
+		// @include breakpoint-down(mobile-small) {
+		// 	padding: 1.7rem 1.2rem;
+		// }
+	}
+
+	.card__image {
+		position: relative;
+		width: 20rem;
+		transition: opacity .3s;
+
+		@include breakpoint-down(tablet) {
+			width: 14.5rem;
+		}
+	}
+
+	.card__image img {
+		height: 100%;
+		object-fit: cover;
+		width: 100%;
+	}
+
+	.card__image:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(51,51,51,0) 68%,rgba(21,21,21,0.03) 69%,rgba(13,13,13,0.06) 70%,rgba(9,9,9,0.09) 71%,rgba(6,6,6,0.15) 73%,rgba(5,5,5,0.18) 74%,rgba(0,0,0,0.27) 77%,rgba(3,3,3,0.3) 78%,rgba(3,3,3,0.33) 79%,rgba(3,3,3,0.36) 80%,rgba(0,0,0,0.45) 83%,rgba(0,0,0,0.48) 84%,rgba(2,2,2,0.51) 85%,rgba(0,0,0,0.54) 86%,rgba(0,0,0,0.6) 88%,rgba(2,2,2,0.63) 89%,rgba(0,0,0,0.66) 90%,rgba(0,0,0,0.99) 100%);
+	}
+
+	.card__head {
+		padding-bottom: .7rem;
+
+		@include breakpoint-down(tablet) {
+			padding-bottom: .5rem;
+		}
+	}
+
+	h4 {
+		color: $c-black;
+		font-size: 1.2rem;
+		line-height: 1.167;
+		letter-spacing: 0.05em;
+		font-weight: 600;
+		max-width: 19.8rem;
+		margin: 0 auto 1rem;
+
+		@include breakpoint-down(tablet) {
+			font-size: 1rem;
+			line-height: 1;
+		}
+	}
+
+	.card__entry p {
+		line-height: 1.2;
+		margin-bottom: 1.2rem;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: .4rem;
+		}
+	}
+
+
+	.card__actions {
+		position: relative;
+		padding: 2rem 0 0;
+
+		@include breakpoint-down(tablet) {
+			padding: 1.1rem 0rem 0;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 5rem;
+			height: .1rem;
+			background-color: $c-black;
+		}
+	}
+
+	.card__actions a {
+		transition: opacity .3s;
+	}
+
+	.card__actions a:hover {
+		opacity: .6;
+	}
+}

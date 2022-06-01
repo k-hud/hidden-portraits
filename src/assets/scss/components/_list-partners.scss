@@ -1,0 +1,31 @@
+/* ------------------------------------------------------------ *\
+	List partners
+\* ------------------------------------------------------------ */
+
+.list-partners {
+	list-style-type: none;
+	display: flex;
+
+	@include breakpoint-down(tablet) {
+		max-width: 60rem;
+		margin: 0 auto;
+		padding: .3rem 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		display: block;
+	}
+
+	li + li {
+		margin-left: 12rem;
+
+		@include breakpoint-down(tablet) {
+			margin-left: 3.8rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-left: 0;
+			margin-top: 6rem;
+		}
+	}
+}

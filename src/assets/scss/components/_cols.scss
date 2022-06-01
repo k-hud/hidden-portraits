@@ -63,3 +63,134 @@
     }
   }
 }
+
+/* ------------------------------------------------------------ *\
+  cols secondary
+\* ------------------------------------------------------------ */
+
+.cols--secondary {
+  margin: 0rem -3rem;
+
+  @include breakpoint-down(large-desktop) {
+    margin: 0 -1.5rem;
+  }
+
+  @include breakpoint-down(tablet) {
+    margin: 0rem -3rem;
+  }
+
+  @include breakpoint-down(mobile) {
+    margin: 0 -1rem;
+  }
+
+
+  .cols__col {
+    padding: 0rem 3rem;
+
+    @include breakpoint-down(large-desktop) {
+      padding: 0 1.5rem;
+    }
+
+    @include breakpoint-down(tablet) {
+      padding: 0rem 3rem;
+    }
+
+    @include breakpoint-down(mobile) {
+      padding: 0 1rem;
+    }
+  }
+}
+
+/* ------------------------------------------------------------ *\
+  cols text
+\* ------------------------------------------------------------ */
+
+.cols--text {
+  margin: 0rem -4rem;
+
+  @include breakpoint-down(large-desktop) {
+    margin: 0rem -1.5rem;
+  }
+
+  @include breakpoint-down(tablet) {
+    margin: 0rem -1rem;
+  }
+
+  .cols__col {
+    padding: 0rem 4rem;
+
+    @include breakpoint-down(large-desktop) {
+      padding: 0rem 1.5rem;
+    }
+
+    @include breakpoint-down(tablet) {
+      padding: 0rem 1rem;
+    }
+  }
+}
+
+/* ------------------------------------------------------------ *\
+  cols info
+\* ------------------------------------------------------------ */
+
+.cols--info {
+  @include breakpoint-down(mobile) {
+    left: 0;
+    margin: 0;
+
+    .cols__col {
+      @include breakpoint-down(mobile) {
+        padding: 0;
+      }
+
+    }
+  }
+}
+
+/* ------------------------------------------------------------ *\
+  cols basic
+\* ------------------------------------------------------------ */
+
+.cols--basic {
+  margin: -2rem -3rem;
+
+  @include breakpoint-down(large-desktop) {
+    margin: -2rem -1.5rem;
+  }
+
+  @include breakpoint-down(tablet) {
+    margin: -2rem -1rem;
+  }
+
+  @include breakpoint-down(mobile) {
+    margin: -2rem 0rem;
+    display: block;
+    margin: 0;
+    columns: 2;
+    column-gap: 2rem;
+    break-inside: avoid;
+  }
+
+  @include breakpoint-down(mobile-medium) {
+    columns: 1;
+    column-gap: 0rem;
+  }
+
+
+  .cols__col {
+    padding: 2rem 3rem;
+
+    @include breakpoint-down(large-desktop) {
+      padding: 2rem 1.5rem;
+    }
+
+    @include breakpoint-down(tablet) {
+      padding: 2rem 1rem;
+    }
+
+    @include breakpoint-down(mobile) {
+      padding: 0;
+      display: contents;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+/* ------------------------------------------------------------ *\
+	Callout-small
+\* ------------------------------------------------------------ */
+
+.callout-small {
+	padding: 2rem 0;
+
+	@include breakpoint-down(tablet) {
+		padding-bottom: 0;
+	}
+
+	.callout__head {
+		margin-bottom: 2rem;
+	}
+
+	h4 {
+		text-align: left;
+		font-weight: 600;
+		font-size: 1.2rem;
+		line-height: 1.167;
+		letter-spacing: 0.05em;
+		margin-bottom: .4rem;
+
+		@include breakpoint-down(mobile) {
+			line-height: 1;
+			font-size: 1.4rem;
+		}
+	}
+}
+
+
+/*  .callout-small alt  */
+
+.callout-small--alt {
+	padding: 0;
+
+	@include breakpoint-down(tablet) {
+		text-align: center;
+	}
+
+	h4 {
+		@include breakpoint-down(tablet) {
+			text-align: center;
+			font-size: 1rem;
+			line-height: 1;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+/* ------------------------------------------------------------ *\
+	Gallery item holder
+\* ------------------------------------------------------------ */
+
+.gallery-item-holder {
+	max-height: 70rem;
+
+	@include breakpoint-down(mobile) {
+		max-height: none;
+		break-inside: avoid;
+	}
+
+	& +  & {
+		margin-top: 3.6rem;
+
+		@include breakpoint-down(tablet) {
+			margin-top: 2rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-top: 3.6rem;
+		}
+	}
+
+	> h4 {
+		font-size: 1.2rem;
+		font-weight: 600;
+		letter-spacing: 0.05em;
+		line-height: 1.167;
+		margin: 2rem 0rem .4rem;
+
+		@include breakpoint-down(tablet) {
+			font-size: 1.2rem;
+			line-height: 1.167;
+			margin:1rem 0 .2rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.2rem;
+			line-height: 1.167;
+			margin:.8rem 0 0rem;
+		}
+	}
+
+	> span {
+		font-size: 1.4rem;
+		letter-spacing: 0.05em;
+		line-height: 1;
+		font-weight: 600;
+		color: #777777;
+		font-family: $ff-clash-display;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.4rem;
+			line-height: 1;
+		}
+	}
+}

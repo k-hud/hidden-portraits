@@ -1,0 +1,64 @@
+/* ------------------------------------------------------------ *\
+	Widget
+\* ------------------------------------------------------------ */
+
+.widget {
+	position: relative;
+	border-top: 2px solid #000000;
+	display: flex;
+	padding: 4rem 0rem 0rem 0rem;
+
+	&:not(:last-child) {
+		padding: 4rem 0rem 8rem 0rem;
+
+		@include breakpoint-down(tablet) {
+			padding: 4rem 0rem 3.8rem 0rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 4rem 0rem 4rem 0rem;
+		}
+	}
+
+	.widget__title {
+		display: inline-block;
+		width: auto;
+		white-space: nowrap;
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+		letter-spacing: 0.07em;
+		font-size: 3rem;
+		font-weight: 600;
+
+		@include breakpoint-down(tablet) {
+			font-size: 2rem;
+			line-height: 1;
+		}
+	}
+
+	.widget__title span {
+		margin-right: 1rem;
+	}
+
+	.widget__aside {
+		flex:  0 0 5.2rem;
+		max-width: 5.2rem;
+		margin-left: -.2rem;
+
+		@include breakpoint-down(tablet) {
+			margin-left: 0;
+			flex:  0 0 4.5rem;
+			max-width: 4.5rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			flex:  0 0 4.1rem;
+			max-width: 4.1rem;
+		}
+	}
+
+	.widget__content {
+		width: 100%;
+		flex: 1 auto;
+	}
+}

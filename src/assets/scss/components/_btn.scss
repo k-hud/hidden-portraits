@@ -11,6 +11,12 @@
   appearance: none;
 }
 
+.button-icon {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+}
+
 /*  Btn block  */
 
 .btn--block {
@@ -114,5 +120,31 @@
     font-size: 1.6rem;
     padding: 1.7rem 2.9rem;
     letter-spacing: 0.07rem;
+  }
+}
+
+/*  btn secondary  */
+
+.btn-secondary {
+  font-family: $ff-clash-display;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  padding: 1.7rem 2.9rem;
+  text-transform: uppercase;
+  background: $c-white;
+  color: #000;
+  border-radius: 0;
+  transition: color .3s, background .3s;
+
+  @include breakpoint-down(tablet) {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  &:hover {
+    background-color: #000;
+    color: $c-white;
   }
 }

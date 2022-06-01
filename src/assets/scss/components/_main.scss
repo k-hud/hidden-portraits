@@ -19,3 +19,13 @@
 		padding-top: 8.2rem;
 	}
 }
+
+/*  main secondary  */
+
+.main--secondary {
+	padding-top: 13.48rem;
+
+	@include breakpoint-down(tablet) {
+		padding-top: 7.7rem;
+	}
+}

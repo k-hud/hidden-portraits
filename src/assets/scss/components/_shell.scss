@@ -9,10 +9,27 @@
 	margin: auto;
 	width: 100%;
 
+	@include breakpoint-down(tablet) {
+		padding-left: 3.4rem;
+		padding-right: 3.4rem;
+	}
+
 	@include breakpoint-down(mobile) {
 		padding-left: 1.7rem;
 		padding-right: 1.7rem;
 	}
+}
+
+/*  shell alt  */
+
+.shell--alt {
+	max-width: calc( 114rem + #{$shell-gutter} * 2 );
+}
+
+/*  shell size1  */
+
+.shell--size1 {
+	max-width: calc( 120rem + #{$shell-gutter} * 2 );
 }
 
 /* Shell Fluid */

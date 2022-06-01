@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	Link
+\* ------------------------------------------------------------ */
+
+.link {
+	display: inline-block;
+	font-family: $ff-clash-display;
+	font-weight: 600;
+	font-size: 1.2rem;
+	line-height: 1.167;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: $c-black;
+	transition: opacity .3s;
+
+	&:hover {
+		opacity: .6;
+		text-decoration: none;
+	}
+}
+
+/*  link more  */
+
+.link--more {
+	margin-top: 1.5rem;
+
+	@include breakpoint-down(tablet) {
+		margin-top: .8rem;
+	}
+
+	@include breakpoint-down(mobile) {
+		margin-top: .6rem;
+	}
+}
+
+/*  link alt  */
+
+.link--alt {
+	font-size: 1.6rem;
+	line-height: 1.23;
+}

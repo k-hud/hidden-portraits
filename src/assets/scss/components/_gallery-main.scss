@@ -77,3 +77,213 @@
 		z-index: 1;
 	}
 }
+
+/*  gallery-main alt  */
+
+.gallery-main--alt:last-child {
+	margin: 0 -2.3rem -4rem;
+
+	@include breakpoint-down(large-desktop) {
+		margin: 0 -1.5rem -4rem;
+	}
+
+	@include breakpoint-down(tablet) {
+		margin: 0 -3rem -4rem;
+	}
+
+	@include breakpoint-down(mobile) {
+		margin: 0 -1.5rem -4.2rem;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		display: block;
+		margin: 0;
+	}
+}
+
+/*  gallery-main--alt  */
+.gallery-main--alt {
+	margin: 0 -2.3rem -4rem;
+
+	@include breakpoint-down(large-desktop) {
+		margin: 0 -1.5rem -4rem;
+	}
+
+	@include breakpoint-down(tablet) {
+		margin: 0 -3rem -4rem;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: 0 1.5rem;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		display: block;
+		margin: 0;
+	}
+
+	li {
+		flex: 0 0 25%;
+		max-width: 25%;
+		padding: 0 2.3rem;
+		margin-bottom: 4rem;
+
+		@include breakpoint-down(large-desktop) {
+			padding: 0 1.7rem;
+		}
+
+		@include breakpoint-down(tablet) {
+			padding: 0 3rem;
+			margin-bottom: 4rem;
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 0 1.5rem;
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 100%;
+			padding: 0;
+		}
+	}
+}
+
+/*  gallery-main--secondary  */
+
+.gallery-main--secondary:last-child {
+	margin: 0 -3rem -3.8rem;
+
+	@include breakpoint-down(large-desktop) {
+		margin: 0 -1.5rem -3.8rem;
+	}
+
+	@include breakpoint-down(tablet) {
+		margin: 0 -.6rem -3.8rem;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		display: block;
+		margin: 0;
+	}
+}
+
+.gallery-main--secondary {
+	margin: 0 -3rem -3.8rem;
+
+	@include breakpoint-down(large-desktop) {
+		margin: 0 -1.5rem -3.8rem;
+	}
+
+	@include breakpoint-down(tablet) {
+		margin: 0 -.6rem -3.8rem;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		display: block;
+		margin: 0;
+	}
+
+	li {
+		flex: 0 0 33.33%;
+		max-width: 33.33%;
+		padding: 0 3rem;
+		margin-bottom: 3.8rem;
+
+		@include breakpoint-down(large-desktop) {
+			padding: 0 1.5rem;
+			margin-bottom: 3.8rem;
+		}
+
+		@include breakpoint-down(tablet) {
+			padding: 0 .6rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 100%;
+			padding: 0;
+		}
+	}
+}
+
+/*  gallery-main events  */
+
+.gallery-main--events:last-child {
+	margin: 0 -2.3rem -4rem;
+
+	@include breakpoint-down(large-desktop) {
+		margin: 0 -1.5rem -4rem;
+	}
+
+	@include breakpoint-down(tablet) {
+		margin: 0 -.6rem -4rem;
+	}
+
+	@include breakpoint-down(mobile) {
+		margin: 0 -1.5rem -4.2rem;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		display: block;
+		margin: 0;
+	}
+}
+
+/*  gallery-main--events  */
+.gallery-main--events {
+	margin: 0 -2.3rem -4rem;
+
+	@include breakpoint-down(large-desktop) {
+		margin: 0 -1.5rem -4rem;
+	}
+
+	@include breakpoint-down(tablet) {
+		margin: 0 -.6rem -4rem;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: 0 1.5rem;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		display: block;
+		margin: 0;
+	}
+
+	li {
+		flex: 0 0 25%;
+		max-width: 25%;
+		padding: 0 2.3rem;
+		margin-bottom: 4rem;
+
+		@include breakpoint-down(large-desktop) {
+			padding: 0 1.7rem;
+		}
+
+		@include breakpoint-down(tablet) {
+			padding: 0 .6rem;
+			margin-bottom: 4rem;
+			flex: 0 0 33.3%;
+			max-width: 33.3%;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 0 1.5rem;
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 100%;
+			padding: 0;
+		}
+	}
+}

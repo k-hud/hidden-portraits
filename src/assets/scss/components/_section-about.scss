@@ -74,3 +74,48 @@
 		}
 	}
 }
+
+/*  seciton about alt  */
+
+.section.section-about--alt {
+	padding-top: 4rem;
+
+	@include breakpoint-down(tablet) {
+		padding: .2rem 0rem 0 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: .2rem 0rem 0 0;
+	}
+
+	.section__head h1 {
+		@include breakpoint-down(mobile) {
+			margin: 0 0 .8rem;
+		}
+	}
+
+	.section__body {
+		max-width: 114rem;
+		margin: 0 auto;
+		padding-bottom: 7.8rem;
+
+		@include breakpoint-down(tablet) {
+			padding: 3.7rem 0 4rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 4rem 0 6.4rem;
+			border-bottom: .2rem solid #000000;
+		}
+	}
+
+	.section__body-content {
+		@include breakpoint-down(mobile) {
+			padding: 0;
+		}
+	}
+
+	.section__article {
+		margin-bottom: 0;
+	}
+}

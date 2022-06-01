@@ -5,11 +5,16 @@
 .nav-trigger {
 	position: relative;
 	display: none;
-	width: 2rem;
-	height: 1.6rem;
+	width: 2.8rem;
+	height: 2rem;
 
 	@include breakpoint-down(tablet) {
 		display: inline-block;
+	}
+
+	@include breakpoint-down(mobile) {
+		width: 2rem;
+		height: 1.6rem;
 	}
 
 	span {
@@ -17,7 +22,6 @@
 		display: block;
 		height: .2rem;
 		width: 100%;
-		border-radius: .2rem;
 		background: $c-black;
 		transition: top .2s .25s, opacity .2s .25s, transform .2s 0s;
 	}
@@ -26,10 +30,18 @@
 		top: 0;
 	}
 	span:nth-child(2) {
-		top: .7rem;
+		top: .9rem;
+
+		@include breakpoint-down(mobile) {
+			top: .7rem;
+		}
 	}
 	span:nth-child(3) {
-		top: 1.4rem;
+		top: 1.8rem;
+
+		@include breakpoint-down(mobile) {
+			top: 1.4rem;
+		}
 	}
 }
 
@@ -41,7 +53,11 @@
 
 	span:nth-child(3),
 	span:nth-child(1) {
-		top: .7rem;
+		top: .9rem;
+
+		@include breakpoint-down(mobile) {
+			top: .7rem;
+		}
 	}
 
 	span:nth-child(2) {
