@@ -31,6 +31,35 @@
 		}
 	}
 
+		.section-collection--alt {
+			position: relative;
+			padding: 4rem 0 2rem;
+	
+			@include breakpoint-down(tablet) {
+				padding: 0rem 0rem 6rem;
+			}
+	
+			@include breakpoint-down(mobile) {
+				padding: .3rem 0rem 5.1rem;
+			}
+	
+			.section__inner {
+				border-top: 4px solid #000000;
+				padding: 8rem 0rem 0rem 0rem;
+				display: flex;
+				flex-flow: row wrap;
+	
+				@include breakpoint-down(tablet) {
+					border-top: 3px solid #000000;
+					padding: 4rem 0rem 0rem 0rem;
+				}
+	
+				@include breakpoint-down(mobile) {
+					border: none;
+					padding: 0rem;
+				}
+			}
+
 	.section__content {
 		flex: 0 0 calc(100% - 30rem);
 		max-width: calc(100% - 30rem);
