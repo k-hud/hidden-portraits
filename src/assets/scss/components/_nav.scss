@@ -78,7 +78,7 @@
 
 	ul > li:nth-child(2) {
 		@include breakpoint-down(tablet) {
-			order: 3;
+			order: 2;
 		}
 	}
 
@@ -88,6 +88,11 @@
 		}
 	}
 
+		ul>li:nth-child(4) {
+			@include breakpoint-down(tablet) {
+				order: 4;
+			}
+		}
 	ul > li:first-child {
 		@include breakpoint-down(tablet) {
 			order: 1;
