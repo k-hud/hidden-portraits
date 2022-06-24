@@ -83,18 +83,18 @@
 /*  gallery-main alt  */
 
 .gallery-main--alt:last-child {
-	margin: 0 -2.3rem -4rem;
+	margin: 0 -2.3rem 4rem;
 
 	@include breakpoint-down(large-desktop) {
-		margin: 0 -1.5rem -4rem;
+		margin: 0 -1.5rem 4rem;
 	}
 
 	@include breakpoint-down(tablet) {
-		margin: 0 -3rem -4rem;
+		margin: 0 -3rem 4rem;
 	}
 
 	@include breakpoint-down(mobile) {
-		margin: 0 -1.5rem -4.2rem;
+		margin: 0 -1.5rem 4.2rem;
 	}
 
 	@include breakpoint-down(mobile-medium) {
