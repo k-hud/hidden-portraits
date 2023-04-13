@@ -41,7 +41,7 @@
 
 		@include breakpoint-down(tablet) {
 			font-size: 2.2rem;
-			color: #B2B2B2;
+			color: #B2B2B2;			
 		}
 	}
 }
@@ -183,6 +183,12 @@
 
 		@include breakpoint-down(tablet) {
 			display: none;
+		}
+	}
+
+	.about-mobile {
+		@include breakpoint-down(tablet) {
+			margin-bottom: 40px;
 		}
 	}
 }

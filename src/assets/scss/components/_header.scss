@@ -273,4 +273,10 @@
       height: 2rem;
     }
   }
+
+  @media only screen and (max-height: 435px) and (orientation: landscape) {
+  .about_mobile {
+    margin-bottom: 25px;
+  }
+}
 }
