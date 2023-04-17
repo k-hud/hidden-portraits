@@ -189,7 +189,18 @@
 	.about-mobile {
 
 		@include breakpoint-down(tablet) {
+		
 			margin-bottom: 40px;
+		}
+	}
+
+	.about-mobile-home {
+
+		margin-top: 18px;
+
+		@include breakpoint-down(tablet) {
+		
+			margin-bottom: 30px;
 		}
 	}
 }
